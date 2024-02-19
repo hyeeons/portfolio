@@ -1,9 +1,10 @@
 import { Outlet } from "react-router-dom";
+import styled from "styled-components";
 
 const Layout = () => {
   return (
     <>
-      <div>레이아웃!</div> <Outlet />
+      <Outlet />
     </>
   );
 };
@@ -11,9 +12,22 @@ const Layout = () => {
 export const PfLayout = () => {
   return (
     <>
-      <div>포트폴리오</div> <Outlet />
+      <GnbWrap>
+        <div className="header">
+          <h1>Portfolio</h1>
+        </div>
+      </GnbWrap>
+      <Outlet />
     </>
   );
 };
 
+const GnbWrap = styled.div`
+  background-color: lightblue;
+  width: 282px;
+  height: 100vh;
+  h1 {
+    margin: 0;
+  }
+`;
 export default Layout;
