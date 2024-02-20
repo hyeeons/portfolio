@@ -31,11 +31,16 @@ const GnbWrap = styled.div`
   .header {
     width: 237px;
     height: 92px;
-    background: lightcoral;
     margin: 0 auto;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.gnbLine};
+
+    border-bottom: 1px solid ${theme.colors.grayF9};
   }
   h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px 0;
+    color: ${theme.colors.orangeVita};
   }
 `;
 export default Layout;
