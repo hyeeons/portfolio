@@ -26,9 +26,8 @@ const GnbWrap = styled.div`
   background-color: lightblue;
   width: 282px;
   height: 100vh;
-  margin: 0;
   h1 {
-    margin: 0;
+    color: "brand.200";
   }
 `;
 export default Layout;
