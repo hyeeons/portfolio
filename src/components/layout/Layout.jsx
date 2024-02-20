@@ -24,7 +24,7 @@ export const PfLayout = () => {
 };
 
 const GnbWrap = styled.div`
-  background-color: lightblue;
+  background-color: ${theme.colors.grayF9};
   width: 282px;
   height: 100vh;
   padding-top: 84px;
@@ -32,8 +32,7 @@ const GnbWrap = styled.div`
     width: 237px;
     height: 92px;
     margin: 0 auto;
-
-    border-bottom: 1px solid ${theme.colors.grayF9};
+    border-bottom: 1px solid ${theme.colors.gnbLine};
   }
   h1 {
     font-size: 1.875rem;
