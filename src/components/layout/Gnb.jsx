@@ -1,16 +1,29 @@
-import { PiFlowerFill } from "react-icons/pi";
-import { FaHospital } from "react-icons/fa";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import theme from "../../themes/theme";
+import { FaPagelines } from "react-icons/fa";
+import { FaHospital } from "react-icons/fa";
+import { MdDashboardCustomize } from "react-icons/md";
+import { DiJavascript } from "react-icons/di";
 
 const Gnb = () => {
   const MenuArr = [
-    { path: "/vita500", icon: <PiFlowerFill />, text: "비타500 리뉴얼" },
+    { path: "/vita500", icon: <FaPagelines />, text: "비타500 리뉴얼" },
     {
       path: "/samsunghospital",
       icon: <FaHospital />,
       text: "삼성서울병원 리뉴얼",
+    },
+
+    {
+      path: "/dashboard",
+      icon: <MdDashboardCustomize />,
+      text: "Dashboard",
+    },
+    {
+      path: "/jsdiary",
+      icon: <DiJavascript />,
+      text: "Javascript Diary",
     },
   ];
   return (
@@ -20,10 +33,12 @@ const Gnb = () => {
       </div>
       <div className="menuWrap">
         {MenuArr.map((item, index) => (
-          <div className="menu-box" key={index}>
+          <div className="menu-container" key={index}>
             <Link to={item.path} className="link">
-              <div className="menu menu-icon">{item.icon}</div>
-              <div className="menu menu-text">{item.text}</div>
+              <div className="menu-box">
+                <div className="menu menu-icon">{item.icon}</div>
+                <div className="menu menu-text">{item.text}</div>
+              </div>
             </Link>
           </div>
         ))}
@@ -55,22 +70,20 @@ const GnbWrap = styled.div`
     background: lightblue;
     width: 237px;
     height: 706px;
-    margin: 0 auto;
-  }
-  .menu-box {
+    margin: 40px auto 0;
   }
 
-  .link {
-    height: 35px;
+  .menu-box {
+    height: 40px;
     padding: 0 20px;
     display: flex;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     cursor: pointer;
-  }
-  .menu {
-    font-size: 20px;
-    font-weight: 700;
+    .menu {
+      font-size: 19px;
+      font-weight: 700;
+    }
   }
 `;
 
