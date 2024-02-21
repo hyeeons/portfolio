@@ -318,3 +318,23 @@ legend {
     content: "";
   }
 }
+
+.link {
+  text-decoration: none;
+  box-shadow: none;
+  //   color: inherit;
+}
+
+.link:hover {
+  text-decoration: none;
+  border: none;
+}
+
+.link:focus {
+  box-shadow: none;
+}
+
+.link:active {
+  box-shadow: none;
+  //   color: inherit;
+}

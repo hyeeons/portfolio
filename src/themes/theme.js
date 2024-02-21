@@ -5,6 +5,15 @@ export const theme = {
     orangeVita: "#FD790D",
     grayF9: "#F9F9F9",
     gnbLine: "#827362",
+    black: "#000",
+    txtdefault: "#222",
+    txtDkNavy: "#2D3748",
+  },
+  fonts: {
+    fz20bold: {
+      fontszie: "20px",
+      fontweight: "700",
+    },
   },
 };
 
