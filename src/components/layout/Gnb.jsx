@@ -127,7 +127,7 @@ const GnbWrap = styled.div`
     font-weight: 700;
     text-align: center;
     padding: 30px 0;
-
+    /* ${theme.colors.gnbLine} */
     /* color: ${theme.colors.orangeVita}; */
   }
   .menuWrap {
