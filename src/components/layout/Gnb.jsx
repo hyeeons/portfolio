@@ -66,10 +66,10 @@ const Gnb = () => {
         <h1 style={{ color: SelectColor() }}>Portfolio</h1>
       </div>
       <div className="menuWrap">
-        {MenuArr.map((item, index) => (
+        {MenuArr.map(({ path, icon, text, color }, index) => (
           <div className="menu-container" key={index}>
             <Link
-              to={item.path}
+              to={path}
               className="link"
               onClick={() => {
                 setIsSelected(index);
@@ -86,7 +86,7 @@ const Gnb = () => {
                   //         : theme.colors.grayDefault,
                   //   }}
                 >
-                  {item.icon}
+                  {icon}
                 </div>
                 <div
                   className="menu menu-text"
@@ -98,7 +98,7 @@ const Gnb = () => {
                   //         : theme.colors.grayDefault,
                   //   }}
                 >
-                  {item.text}
+                  {text}
                 </div>
               </div>
             </Link>
