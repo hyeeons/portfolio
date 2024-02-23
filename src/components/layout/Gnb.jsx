@@ -1,15 +1,16 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import theme from "../../themes/theme";
 import { PiDesktop } from "react-icons/pi";
 import { PiDesktopFill } from "react-icons/pi";
 import { RiPagesFill } from "react-icons/ri";
 import { FaPager } from "react-icons/fa";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Gnb = () => {
   const [isSelected, setIsSelected] = useState(0);
+  const location = useLocation();
 
   const MenuArr = [
     {
@@ -61,6 +62,17 @@ const Gnb = () => {
           : "",
     };
   };
+
+  const CurrentMenu = () => {
+    const currentPath = location.pathname;
+    const index = MenuArr.findIndex((menu) => menu.path === currentPath);
+    return index !== -1 ? index : 0;
+  };
+
+  useEffect(() => {
+    setIsSelected(CurrentMenu());
+  }, [location.pathname]);
+
   return (
     <GnbWrap>
       <div className="gnbcontainer">
