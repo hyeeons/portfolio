@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import theme from "../../themes/theme";
-import { FaPagelines } from "react-icons/fa";
-import { MdLocalHospital } from "react-icons/md";
-import { MdDashboardCustomize } from "react-icons/md";
-import { DiJavascript } from "react-icons/di";
+import { PiDesktop } from "react-icons/pi";
+import { PiDesktopFill } from "react-icons/pi";
+import { RiPagesFill } from "react-icons/ri";
+import { FaPager } from "react-icons/fa";
+
 import { useState } from "react";
 
 const Gnb = () => {
@@ -13,26 +14,26 @@ const Gnb = () => {
   const MenuArr = [
     {
       path: "/vita500",
-      icon: <FaPagelines />,
+      //   icon: <PiDesktopFill />,
       text: "비타500 리뉴얼",
       color: "orangeVita",
     },
     {
       path: "/samsunghospital",
-      icon: <MdLocalHospital />,
+      //   icon: <PiDesktop />,
       text: "삼성서울병원 리뉴얼",
       color: "blueSamsung",
     },
 
     {
       path: "/dashboard",
-      icon: <MdDashboardCustomize />,
+      //   icon: <PiDesktop />,
       text: "Dashboard",
       color: "green",
     },
     {
       path: "/jsdiary",
-      icon: <DiJavascript />,
+      //   icon: <PiDesktop />,
       text: "Javascript Diary",
       color: "red",
     },
@@ -62,48 +63,32 @@ const Gnb = () => {
   };
   return (
     <GnbWrap>
-      <div className="header">
-        <h1 style={{ color: SelectColor() }}>Portfolio</h1>
-      </div>
-      <div className="menuWrap">
-        {MenuArr.map(({ path, icon, text, color }, index) => (
-          <div className="menu-container" key={index}>
-            <Link
-              to={path}
-              className="link"
-              onClick={() => {
-                setIsSelected(index);
-              }}
-            >
-              <div className="menu-box">
-                <div
-                  className="menu menu-icon"
-                  style={SelectText(index)}
-                  //   style={{
-                  //     color:
-                  //       isSelected === index
-                  //         ? SelectColor()
-                  //         : theme.colors.grayDefault,
-                  //   }}
-                >
-                  {icon}
+      <div className="gnbcontainer">
+        <div className="header">
+          <h1 style={{ color: SelectColor() }}>Portfolio</h1>
+        </div>
+        <div className="menuWrap">
+          {MenuArr.map(({ path, icon, text, color }, index) => (
+            <div className="menu-container" key={index}>
+              <Link
+                to={path}
+                className="link"
+                onClick={() => {
+                  setIsSelected(index);
+                }}
+              >
+                <div className="menu-box">
+                  <div className="menu menu-icon" style={SelectText(index)}>
+                    {isSelected === index ? <PiDesktopFill /> : <PiDesktop />}
+                  </div>
+                  <div className="menu menu-text" style={SelectText(index)}>
+                    {text}
+                  </div>
                 </div>
-                <div
-                  className="menu menu-text"
-                  style={SelectText(index)}
-                  //   style={{
-                  //     color:
-                  //       isSelected === index
-                  //         ? theme.colors.txtDkNavy
-                  //         : theme.colors.grayDefault,
-                  //   }}
-                >
-                  {text}
-                </div>
-              </div>
-            </Link>
-          </div>
-        ))}
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </GnbWrap>
   );
@@ -113,9 +98,14 @@ const GnbWrap = styled.div`
   background-color: ${theme.colors.grayF9};
   width: 282px;
   height: 100vh;
-  padding-top: 84px;
   box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.1);
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  .gnbcontainer {
+    padding-top: 84px;
+  }
   .header {
     width: 237px;
     height: 92px;
