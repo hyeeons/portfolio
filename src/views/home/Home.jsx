@@ -3,7 +3,7 @@ import theme from "../../themes/theme";
 import { useEffect, useState } from "react";
 import gsap from "gsap";
 import line from "../../assets/images/line.png";
-import Typing from "./components/Typing";
+import Typing from "../../components/common/Typing";
 
 const Home = () => {
   const [isTyping, setIsTyping] = useState(false);

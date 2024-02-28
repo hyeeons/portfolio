@@ -14,6 +14,7 @@ const Routers = () => {
       <BrowserRouter>
         <Routes>
           {/* 기본 레이아웃 */}
+
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/aboutme" element={<AboutMe />} />
