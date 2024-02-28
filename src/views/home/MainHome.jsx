@@ -32,5 +32,7 @@ const MainHome = () => {
 
 const Wrap = styled.div`
   position: relative;
+  height: 100svh;
 `;
+
 export default MainHome;
