@@ -14,7 +14,7 @@ const Layout = () => {
 export const PfLayout = () => {
   return (
     <>
-      <Gnb />
+      {/* <Gnb /> */}
       <Outlet />
     </>
   );

@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import Layout, { PfLayout } from "./components/layout/Layout";
 import Home from "./views/home/Home";
 import AboutMe from "./views/aboutMe/AboutMe";
@@ -18,16 +18,11 @@ const Routers = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainHome />}>
-            {/* 포트폴리오 */}
-            <Route path="/portfolio" element={<Portfolio />}>
-              <Route path="/portfolio/vita500" element={<Vita500 />} />
-              <Route
-                path="/portfolio/samsunghospital"
-                element={<SamsungHospital />}
-              />
-              <Route path="/portfolio/dashboard" element={<Dashboard />} />
-              <Route path="/portfolio/jsdiary" element={<JsDiary />} />
-            </Route>
+            {/* <Route path="/portfolio" element={<Portfolio />} /> */}
+            <Route path="/vita500" element={<Vita500 />} />
+            <Route path="/samsunghospital" element={<SamsungHospital />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/jsdiary" element={<JsDiary />} />
             <Route path="/aboutme" element={<AboutMe />} />
             <Route path="/thankyou" element={<Thankyou />} />
           </Route>

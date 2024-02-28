@@ -13,26 +13,26 @@ const Gnb = () => {
 
   const MenuArr = [
     {
-      path: "/portfolio/vita500",
+      path: "/vita500",
       //   icon: <PiDesktopFill />,
       text: "비타500 리뉴얼",
       color: "orangeVita",
     },
     {
-      path: "/portfolio/samsunghospital",
+      path: "/samsunghospital",
       //   icon: <PiDesktop />,
       text: "삼성서울병원 리뉴얼",
       color: "blueSamsung",
     },
 
     {
-      path: "/portfolio/dashboard",
+      path: "/dashboard",
       //   icon: <PiDesktop />,
       text: "Dashboard",
       color: "green",
     },
     {
-      path: "/portfolio/jsdiary",
+      path: "/jsdiary",
       //   icon: <PiDesktop />,
       text: "Javascript Diary",
       color: "red",

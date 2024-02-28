@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import ComtBox from "./Comment";
 
-const SitePage = ({ iframeSrc }) => {
+const SitePage = ({ iframesrc }) => {
   return (
     <FlexBox>
       <PageBox>
-        <iframe className="frame" src={iframeSrc}></iframe>
+        <iframe className="frame" src={iframesrc}></iframe>
       </PageBox>
       <ComtBox />
     </FlexBox>

@@ -5,6 +5,8 @@ import Vita500 from "../vita500/Vita500";
 import Thankyou from "../thankyou/Thankyou";
 import Portfolio from "../portfolio/Portfolio";
 import styled from "styled-components";
+import { PfLayout } from "../../components/layout/Layout";
+import { Outlet } from "react-router-dom";
 
 const MainHome = () => {
   let options = {

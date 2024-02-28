@@ -8,12 +8,11 @@ import styled from "styled-components";
 const Portfolio = () => {
   return (
     <>
-      {/* <PfLayout /> */}
       <Wrap className="wrap">
+        <PfLayout />
         <Gnb />
         <SitePage />
       </Wrap>
-      {/* <Outlet /> */}
     </>
   );
 };
