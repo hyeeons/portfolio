@@ -1,3 +1,4 @@
+import Gnb from "../../components/layout/Gnb";
 import SitePage from "../../components/layout/SitePage";
 
 const Vita500 = () => {

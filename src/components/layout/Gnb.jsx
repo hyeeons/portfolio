@@ -5,7 +5,6 @@ import { PiDesktop } from "react-icons/pi";
 import { PiDesktopFill } from "react-icons/pi";
 import { RiPagesFill } from "react-icons/ri";
 import { FaPager } from "react-icons/fa";
-
 import { useEffect, useState } from "react";
 
 const Gnb = () => {
@@ -14,26 +13,26 @@ const Gnb = () => {
 
   const MenuArr = [
     {
-      path: "/vita500",
+      path: "/portfolio/vita500",
       //   icon: <PiDesktopFill />,
       text: "비타500 리뉴얼",
       color: "orangeVita",
     },
     {
-      path: "/samsunghospital",
+      path: "/portfolio/samsunghospital",
       //   icon: <PiDesktop />,
       text: "삼성서울병원 리뉴얼",
       color: "blueSamsung",
     },
 
     {
-      path: "/dashboard",
+      path: "/portfolio/dashboard",
       //   icon: <PiDesktop />,
       text: "Dashboard",
       color: "green",
     },
     {
-      path: "/jsdiary",
+      path: "/portfolio/jsdiary",
       //   icon: <PiDesktop />,
       text: "Javascript Diary",
       color: "red",
@@ -112,7 +111,7 @@ const GnbWrap = styled.div`
   height: 100vh;
   box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.1);
   position: absolute;
-  top: 0;
+  top: 0%;
   left: 0;
   z-index: 100;
   .gnbcontainer {

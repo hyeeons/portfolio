@@ -42,12 +42,12 @@ const Home = () => {
 
   return (
     <>
-      <div className="intro">
+      <IntroBox className="intro">
         <H1St className="hello">HELLO</H1St>
         <H1name className="front">Frontend Developer</H1name>
         {/* <H1St className="dev">Developer</H1St> */}
         <H1name className="me">LEE HYUN JEONG</H1name>
-      </div>
+      </IntroBox>
       <BoxCon className="boxContain">
         <div className="lineBox">
           <img src={line} alt="" />
@@ -62,6 +62,7 @@ const Home = () => {
     </>
   );
 };
+const IntroBox = styled.div``;
 
 const H1St = styled.h1`
   font-size: 150px;
