@@ -9,6 +9,9 @@ export const theme = {
     grayDefault: "#9CA7BA",
     gnbLine: "#827362",
     black: "#000",
+    white: "#fff",
+    bgblack: "#080808",
+    // txtdefault: "#212126",
     txtdefault: "#212126",
     txtDkNavy: "#384B6B",
     // 임시

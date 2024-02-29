@@ -38,15 +38,83 @@ const Home = () => {
       repeat: -1,
       repeatDelay: 2,
     });
+    // line
+    gsap.fromTo(
+      ".line1",
+      {
+        left: "-100%",
+        opacity: 0.3,
+      },
+      {
+        left: "120%",
+        opacity: 0,
+        duration: 10,
+        delay: 0,
+        repeat: -1,
+        repeatDelay: -2,
+      }
+    );
+    gsap.fromTo(
+      ".line3",
+      {
+        right: "-100%",
+        opacity: 0.3,
+      },
+      {
+        right: "120%",
+        opacity: 0,
+        duration: 10,
+        delay: 0,
+        repeat: -1,
+        repeatDelay: -2,
+      }
+    );
+    gsap.fromTo(
+      ".line2",
+      {
+        top: "-100%",
+        opacity: 0.3,
+      },
+      {
+        top: "100%",
+        opacity: 0,
+        duration: 4,
+        delay: 2,
+        repeat: -1,
+        repeatDelay: 0,
+      }
+    );
+
+    gsap.fromTo(
+      ".line4",
+      {
+        top: "100%",
+        opacity: 0.3,
+      },
+      {
+        top: "-10%",
+        opacity: 0,
+        duration: 4,
+        delay: 2,
+        repeat: -1,
+        repeatDelay: 0,
+      }
+    );
   }, []);
 
   return (
     <>
-      <div className="intro">
+      <IntroBox className="intro">
+        <div className="bgLine">
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
+          <div className="line4"></div>
+        </div>
         <H1St className="hello">HELLO</H1St>
         <H1name className="front">Frontend Developer</H1name>
-        <H1name className="me">LEE HYUN JEONG</H1name>
-      </div>
+        <H1name className="me">LEE HYUN JUNG</H1name>
+      </IntroBox>
       <BoxCon className="boxContain">
         <div className="lineBox">
           <img src={line} alt="" />
@@ -62,6 +130,50 @@ const Home = () => {
   );
 };
 
+const IntroBox = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  background: ${theme.colors.bgblack};
+  /* background: #101010; */
+  .bgLine {
+    width: 100%;
+    height: 100svh;
+    position: relative;
+    overflow: hidden;
+    /* background-color: lightblue; */
+    .line1 {
+      height: 2px;
+      width: 100%;
+      background-color: ${theme.colors.grayF9};
+      position: absolute;
+      top: 10%;
+      opacity: 0.5;
+    }
+    .line2 {
+      width: 2px;
+      height: 100%;
+      background-color: ${theme.colors.grayF9};
+      position: absolute;
+      right: 5%;
+    }
+    .line3 {
+      height: 2px;
+      width: 100%;
+      background-color: ${theme.colors.grayF9};
+      position: absolute;
+      bottom: 10%;
+    }
+    .line4 {
+      width: 2px;
+      height: 100%;
+      background-color: ${theme.colors.grayF9};
+      position: absolute;
+      top: 90%;
+      left: 5%;
+    }
+  }
+`;
 const H1St = styled.h1`
   font-size: 150px;
   width: 100%;
@@ -75,7 +187,8 @@ const H1St = styled.h1`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: ${theme.colors.txtdefault};
+  color: ${theme.colors.white};
+  /* color: ${theme.colors.txtdefault}; */
 `;
 
 const H1name = styled(H1St)`
