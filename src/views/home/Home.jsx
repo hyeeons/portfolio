@@ -51,7 +51,7 @@ const Home = () => {
         duration: 10,
         delay: 0,
         repeat: -1,
-        repeatDelay: -2,
+        repeatDelay: -3,
       }
     );
     gsap.fromTo(
@@ -66,7 +66,7 @@ const Home = () => {
         duration: 10,
         delay: 0,
         repeat: -1,
-        repeatDelay: -2,
+        repeatDelay: -3,
       }
     );
     gsap.fromTo(
@@ -81,7 +81,7 @@ const Home = () => {
         duration: 4,
         delay: 2,
         repeat: -1,
-        repeatDelay: 0,
+        repeatDelay: 1,
       }
     );
 
@@ -97,7 +97,7 @@ const Home = () => {
         duration: 4,
         delay: 2,
         repeat: -1,
-        repeatDelay: 0,
+        repeatDelay: 1,
       }
     );
   }, []);
@@ -207,8 +207,8 @@ const BoxCon = styled.div`
     transform: translate(-50%, -50%);
     opacity: 0;
     z-index: 110;
-    width: 260px;
-    height: 260px;
+    width: 268px;
+    height: 268px;
     img {
       width: 100%;
       height: 100%;
@@ -219,8 +219,8 @@ const BoxCon = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 245px;
-    height: 245px;
+    width: 250px;
+    height: 250px;
     opacity: 0;
     z-index: 200;
     background-color: ${theme.colors.orange};
