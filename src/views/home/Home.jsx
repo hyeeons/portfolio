@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import gsap from "gsap";
 import line from "../../assets/images/line.png";
 import Typing from "../../components/common/Typing";
+import Header from "../../components/layout/Header";
 
 const Home = () => {
   const [isTyping, setIsTyping] = useState(false);
@@ -111,6 +112,9 @@ const Home = () => {
           <div className="line3"></div>
           <div className="line4"></div>
         </div>
+        <div className="header">
+          <Header />
+        </div>
         <H1St className="hello">HELLO</H1St>
         <H1name className="front">Frontend Developer</H1name>
         <H1name className="me">LEE HYUN JUNG</H1name>
@@ -130,12 +134,22 @@ const Home = () => {
   );
 };
 
+// introbox - bgline
 const IntroBox = styled.div`
   position: relative;
   width: 100%;
   height: 100svh;
   background: ${theme.colors.bgblack};
   /* background: #101010; */
+
+  /* header */
+  .header {
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    transform: translate(-50%, -50%);
+  }
+  /* bgline */
   .bgLine {
     width: 100%;
     height: 100svh;
@@ -174,9 +188,10 @@ const IntroBox = styled.div`
     }
   }
 `;
+// 글자스타일
 const H1St = styled.h1`
   font-size: 150px;
-  width: 100%;
+  width: 70%;
   font-weight: bold;
   text-align: center;
   position: absolute;
