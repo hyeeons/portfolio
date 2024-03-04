@@ -1,5 +1,15 @@
 import styled from "styled-components";
 import { IoHomeSharp } from "react-icons/io5";
+import { IoHome } from "react-icons/io5";
+import { FaUser } from "react-icons/fa6";
+import { LuMousePointerClick } from "react-icons/lu";
+import { RiSurveyFill } from "react-icons/ri";
+
+import { FaList } from "react-icons/fa6";
+import { FaMousePointer } from "react-icons/fa";
+
+import theme from "../../themes/theme";
+import gsap from "gsap";
 
 const Header = () => {
   return (
@@ -7,25 +17,31 @@ const Header = () => {
       <ul>
         <li>
           <a href="/">
-            <IoHomeSharp className="icon" />
+            <IoHome className="icon" />
             <span>Home</span>
           </a>
         </li>
         <li>
+          <a href="/contact">
+            <RiSurveyFill className="icon" />
+            <span>Contact</span>
+          </a>
+        </li>
+        <li>
           <a href="/aboutme">
-            <IoHomeSharp className="icon" />
+            <FaUser className="icon" />
             <span>About Me</span>
           </a>
         </li>
         <li>
           <a href="/vita500">
-            <IoHomeSharp className="icon" />
+            <FaList className="icon" />
             <span>Project</span>
           </a>
         </li>
         <li>
           <a href="/contact">
-            <IoHomeSharp className="icon" />
+            <LuMousePointerClick className="icon" />
             <span>Contact</span>
           </a>
         </li>
@@ -39,22 +55,50 @@ const Hd = styled.div`
   ul {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
   }
   a {
-    background: lightcoral;
-    display: block;
-    width: 52px;
-    height: 52px;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    /* background: ${theme.colors.txtdefault}; */
+    padding: 13px;
+    /* width: 30px;
+    height: 30px; */
     border-radius: 9999px;
+    position: relative;
   }
   span {
-    display: none;
+    color: ${theme.colors.orange};
+    background: ${theme.colors.txtdefault};
+    font-size: 20px;
+    padding: 16px 30px 15px 5px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    border-radius: 50px;
+    width: 140px;
+    opacity: 0;
+    transition: all 0.3s ease;
   }
   .icon {
-    width: 70%;
-    height: 70%;
-    padding: 5px 8px;
+    position: absolute;
+    top: 0%;
+    right: 0px;
+    z-index: 30;
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+    padding: 13px;
+    border-radius: 50px;
+    background: ${theme.colors.txtdefault};
+    color: ${theme.colors.orange};
+    &:hover + span {
+      opacity: 1;
+    }
   }
 `;
 export default Header;

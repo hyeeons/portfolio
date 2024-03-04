@@ -33,12 +33,20 @@ const Home = () => {
     );
     // tl.to(".txtBox", { opacity: 1 });
     tl.to(".lineBox", { opacity: 1 });
+    tl.fromTo(".header", { opacity: 0 }, { opacity: 1 });
+    tl.fromTo(".intro-bg", { bottom: "-100%" }, { bottom: "0", duration: 2 });
+    // tl.to(".line1", {
+    //   backgroundColor: `${theme.colors.txtdefault}`,
+    //   opacity: 1,
+    // });
+
     tl.to(".lineBox", {
       rotation: "+=90",
       duration: 1,
       repeat: -1,
       repeatDelay: 2,
     });
+
     // line
     gsap.fromTo(
       ".line1",
@@ -49,10 +57,10 @@ const Home = () => {
       {
         left: "120%",
         opacity: 0,
-        duration: 10,
+        duration: 12,
         delay: 0,
-        repeat: -1,
-        repeatDelay: -3,
+        // repeat: -1,
+        // repeatDelay: -3,
       }
     );
     gsap.fromTo(
@@ -64,10 +72,10 @@ const Home = () => {
       {
         right: "120%",
         opacity: 0,
-        duration: 10,
+        duration: 12,
         delay: 0,
-        repeat: -1,
-        repeatDelay: -3,
+        // repeat: -1,
+        // repeatDelay: -3,
       }
     );
     gsap.fromTo(
@@ -79,10 +87,10 @@ const Home = () => {
       {
         top: "100%",
         opacity: 0,
-        duration: 4,
+        duration: 6,
         delay: 2,
-        repeat: -1,
-        repeatDelay: 1,
+        // repeat: -1,
+        // repeatDelay: 1,
       }
     );
 
@@ -95,10 +103,10 @@ const Home = () => {
       {
         top: "-10%",
         opacity: 0,
-        duration: 4,
+        duration: 6,
         delay: 2,
-        repeat: -1,
-        repeatDelay: 1,
+        // repeat: -1,
+        // repeatDelay: 1,
       }
     );
   }, []);
@@ -106,6 +114,7 @@ const Home = () => {
   return (
     <>
       <IntroBox className="intro">
+        <div className="intro-bg"></div>
         <div className="bgLine">
           <div className="line1"></div>
           <div className="line2"></div>
@@ -140,14 +149,24 @@ const IntroBox = styled.div`
   width: 100%;
   height: 100svh;
   background: ${theme.colors.bgblack};
-  /* background: #101010; */
-
+  .intro-bg {
+    background: ${theme.colors.grayF9};
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    /* z-index: 1; */
+    width: 100%;
+    height: 100svh;
+  }
   /* header */
   .header {
     position: absolute;
-    top: 50%;
-    right: 4%;
+    top: 49%;
+    right: 2%;
+    /* bottom: 2%; */
+    z-index: 100;
     transform: translate(-50%, -50%);
+    opacity: 0;
   }
   /* bgline */
   .bgLine {
@@ -215,6 +234,7 @@ const BoxCon = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   .lineBox {
     position: absolute;
     top: 50%;
