@@ -77,10 +77,10 @@ const Hd = styled.div`
     right: 0;
     z-index: 10;
     border-radius: 50px;
-    width: 51px;
-    /* width: 140px; */
+    width: 140px;
+    visibility: hidden;
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
   }
   .icon {
     position: absolute;
@@ -95,7 +95,7 @@ const Hd = styled.div`
     background: ${theme.colors.txtdefault};
     color: ${theme.colors.orange};
     &:hover + span {
-      width: 140px;
+      visibility: visible;
       opacity: 1;
     }
   }
