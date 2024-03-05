@@ -61,10 +61,7 @@ const Hd = styled.div`
     display: flex;
     text-decoration: none;
     justify-content: space-between;
-    /* background: ${theme.colors.txtdefault}; */
     padding: 13px;
-    /* width: 30px;
-    height: 30px; */
     border-radius: 9999px;
     position: relative;
   }
@@ -72,7 +69,7 @@ const Hd = styled.div`
     color: ${theme.colors.orange};
     background: ${theme.colors.txtdefault};
     font-size: 20px;
-    padding: 16px 30px 15px 5px;
+    padding: 16px 30px 15px 0px;
     font-weight: 700;
     text-align: center;
     position: absolute;
@@ -80,7 +77,8 @@ const Hd = styled.div`
     right: 0;
     z-index: 10;
     border-radius: 50px;
-    width: 140px;
+    width: 51px;
+    /* width: 140px; */
     opacity: 0;
     transition: all 0.3s ease;
   }
@@ -97,6 +95,7 @@ const Hd = styled.div`
     background: ${theme.colors.txtdefault};
     color: ${theme.colors.orange};
     &:hover + span {
+      width: 140px;
       opacity: 1;
     }
   }

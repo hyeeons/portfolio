@@ -32,8 +32,8 @@ const Home = () => {
     );
     // tl.to(".txtBox", { opacity: 1 });
     tl.to(".lineBox", { opacity: 1 });
+    tl.fromTo(".introBg", { bottom: "-100%" }, { bottom: "0", duration: 2 });
     tl.fromTo(".header", { opacity: 0 }, { opacity: 1 });
-    tl.fromTo(".intro-bg", { bottom: "-100%" }, { bottom: "0", duration: 2 });
     tl.to(".lineBox", {
       rotation: "+=90",
       duration: 1,
@@ -72,6 +72,7 @@ const IntroBox = styled.div`
   width: 100%;
   height: 100svh;
   background: ${theme.colors.bgblack};
+  overflow-y: hidden;
   .introBg {
     background: ${theme.colors.grayEc};
     position: absolute;
