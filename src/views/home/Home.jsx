@@ -45,11 +45,8 @@ const Home = () => {
   return (
     <>
       <IntroBox className="intro">
-        <div className="intro-bg"></div>
+        <div className="introBg"></div>
         <Line />
-        <div className="header">
-          <Header />
-        </div>
         <H1St className="hello">HELLO</H1St>
         <H1name className="front">Frontend Developer</H1name>
         <H1name className="me">LEE HYUN JUNG</H1name>
@@ -75,24 +72,14 @@ const IntroBox = styled.div`
   width: 100%;
   height: 100svh;
   background: ${theme.colors.bgblack};
-  .intro-bg {
-    background: ${theme.colors.grayF9};
+  .introBg {
+    background: ${theme.colors.grayEc};
     position: absolute;
     bottom: -100%;
     left: 0;
     /* z-index: 1; */
     width: 100%;
     height: 100svh;
-  }
-  /* header */
-  .header {
-    position: absolute;
-    top: 49%;
-    right: 2%;
-    /* bottom: 2%; */
-    z-index: 100;
-    transform: translate(-50%, -50%);
-    opacity: 0;
   }
 `;
 // 글자스타일

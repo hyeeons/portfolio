@@ -6,6 +6,7 @@ export const theme = {
     orange: "#ffcc5f",
     blueSamsung: "#0B50A1",
     grayF9: "#F9F9F9",
+    grayEc: "#ececec",
     grayDefault: "#9CA7BA",
     gnbLine: "#827362",
     black: "#000",

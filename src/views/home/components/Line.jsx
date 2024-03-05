@@ -69,10 +69,10 @@ const Line = () => {
   }, []);
   return (
     <BgLine className="bgLine">
-      <div className="line-row line1"></div>
-      <div className="line-col line2"></div>
-      <div className="line-row line3"></div>
-      <div className="line-col line4"></div>
+      <div className="lineRow line1"></div>
+      <div className="lineCol line2"></div>
+      <div className="lineRow line3"></div>
+      <div className="lineCol line4"></div>
     </BgLine>
   );
 };
@@ -82,13 +82,13 @@ const BgLine = styled.div`
   height: 100svh;
   position: relative;
   overflow: hidden;
-  .line-row {
+  .lineRow {
     height: 2px;
     width: 100%;
     position: absolute;
     background-color: ${theme.colors.grayF9};
   }
-  .line-col {
+  .lineCol {
     width: 2px;
     height: 100%;
     position: absolute;
