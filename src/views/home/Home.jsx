@@ -5,6 +5,7 @@ import gsap from "gsap";
 import line from "../../assets/images/line.png";
 import Typing from "../../components/common/Typing";
 import Header from "../../components/layout/Header";
+import Line from "./components/Line";
 
 const Home = () => {
   const [isTyping, setIsTyping] = useState(false);
@@ -15,8 +16,6 @@ const Home = () => {
     tl.to(".hello", { opacity: 0 });
     tl.fromTo(".front", { opacity: 0 }, { opacity: 1, duration: 2 });
     tl.to(".front", { opacity: 0 });
-    // tl.fromTo(".dev", { opacity: 0 }, { opacity: 1, duration: 2 });
-    // tl.to(".dev", { opacity: 0 });
     tl.fromTo(".me", { opacity: 0 }, { opacity: 1, duration: 2 });
     tl.to(".me", { opacity: 0 });
     // 박스
@@ -35,92 +34,19 @@ const Home = () => {
     tl.to(".lineBox", { opacity: 1 });
     tl.fromTo(".header", { opacity: 0 }, { opacity: 1 });
     tl.fromTo(".intro-bg", { bottom: "-100%" }, { bottom: "0", duration: 2 });
-    // tl.to(".line1", {
-    //   backgroundColor: `${theme.colors.txtdefault}`,
-    //   opacity: 1,
-    // });
-
     tl.to(".lineBox", {
       rotation: "+=90",
       duration: 1,
       repeat: -1,
       repeatDelay: 2,
     });
-
-    // line
-    gsap.fromTo(
-      ".line1",
-      {
-        left: "-100%",
-        opacity: 0.3,
-      },
-      {
-        left: "120%",
-        opacity: 0,
-        duration: 12,
-        delay: 0,
-        // repeat: -1,
-        // repeatDelay: -3,
-      }
-    );
-    gsap.fromTo(
-      ".line3",
-      {
-        right: "-100%",
-        opacity: 0.3,
-      },
-      {
-        right: "120%",
-        opacity: 0,
-        duration: 12,
-        delay: 0,
-        // repeat: -1,
-        // repeatDelay: -3,
-      }
-    );
-    gsap.fromTo(
-      ".line2",
-      {
-        top: "-100%",
-        opacity: 0.3,
-      },
-      {
-        top: "100%",
-        opacity: 0,
-        duration: 6,
-        delay: 2,
-        // repeat: -1,
-        // repeatDelay: 1,
-      }
-    );
-
-    gsap.fromTo(
-      ".line4",
-      {
-        top: "100%",
-        opacity: 0.3,
-      },
-      {
-        top: "-10%",
-        opacity: 0,
-        duration: 6,
-        delay: 2,
-        // repeat: -1,
-        // repeatDelay: 1,
-      }
-    );
   }, []);
 
   return (
     <>
       <IntroBox className="intro">
         <div className="intro-bg"></div>
-        <div className="bgLine">
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
-          <div className="line4"></div>
-        </div>
+        <Line />
         <div className="header">
           <Header />
         </div>
@@ -167,44 +93,6 @@ const IntroBox = styled.div`
     z-index: 100;
     transform: translate(-50%, -50%);
     opacity: 0;
-  }
-  /* bgline */
-  .bgLine {
-    width: 100%;
-    height: 100svh;
-    position: relative;
-    overflow: hidden;
-    /* background-color: lightblue; */
-    .line1 {
-      height: 2px;
-      width: 100%;
-      background-color: ${theme.colors.grayF9};
-      position: absolute;
-      top: 10%;
-      opacity: 0.5;
-    }
-    .line2 {
-      width: 2px;
-      height: 100%;
-      background-color: ${theme.colors.grayF9};
-      position: absolute;
-      right: 5%;
-    }
-    .line3 {
-      height: 2px;
-      width: 100%;
-      background-color: ${theme.colors.grayF9};
-      position: absolute;
-      bottom: 10%;
-    }
-    .line4 {
-      width: 2px;
-      height: 100%;
-      background-color: ${theme.colors.grayF9};
-      position: absolute;
-      top: 90%;
-      left: 5%;
-    }
   }
 `;
 // 글자스타일
