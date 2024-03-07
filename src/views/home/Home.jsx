@@ -9,7 +9,6 @@ import Line from "./components/Line";
 
 const Home = () => {
   const [isTyping, setIsTyping] = useState(false);
-
   useEffect(() => {
     const tl = gsap.timeline();
     tl.fromTo(".hello", { opacity: 0 }, { opacity: 1, duration: 2 });
@@ -18,6 +17,7 @@ const Home = () => {
     tl.to(".front", { opacity: 0 });
     tl.fromTo(".me", { opacity: 0 }, { opacity: 1, duration: 2 });
     tl.to(".me", { opacity: 0 });
+
     // 박스
     tl.fromTo(
       ".txtBox",
