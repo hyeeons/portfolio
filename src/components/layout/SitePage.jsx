@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import SkillBox from "../common/SkillBox";
 import GotoButton from "../common/Button";
-
 const SitePage = ({
   iframesrc,
   skill,
@@ -61,7 +60,6 @@ const PageBox = styled.div`
   height: 100vh;
   overflow: hidden;
   margin-left: 283px;
-  /* background-color: lightblue; */
   .frame {
     width: 130%;
     height: 125%;
@@ -79,14 +77,16 @@ const PageBox = styled.div`
     transform-origin: 0 0;
   }
 `;
+// comment
 const ComtWrap = styled.div`
   width: 35%;
   height: 100vh;
-  background-color: lightcoral;
+
+  /* background-color: lightcoral; */
   .cont {
     width: 360px;
     height: 763px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     margin: 25% auto;
   }
   /* 폰트 */
