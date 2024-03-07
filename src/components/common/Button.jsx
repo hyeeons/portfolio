@@ -5,17 +5,17 @@ const GotoButton = () => {
   return (
     <GotoBtn>
       <div className="btnBox">
-        <a href="" target="_blacnk">
+        <a href="" target="_blank">
           Website
         </a>
       </div>
       <div className="btnBox">
-        <a href="" target="_blacnk">
+        <a href="" target="_blank">
           Github
         </a>
       </div>
       <div className="btnBox">
-        <a href="" target="_blacnk">
+        <a href="" target="_blank">
           기존 Site
         </a>
       </div>

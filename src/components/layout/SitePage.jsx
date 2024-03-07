@@ -1,13 +1,32 @@
 import styled from "styled-components";
 import ComtBox from "./Comment";
 
-const SitePage = ({ iframesrc }) => {
+const SitePage = ({
+  iframesrc,
+  skill,
+  title,
+  subtitle,
+  subText,
+  siteType,
+  pageType,
+  pageText,
+  projectComment,
+}) => {
   return (
     <FlexBox>
       <PageBox>
         <iframe className="frame" src={iframesrc}></iframe>
       </PageBox>
-      <ComtBox />
+      <ComtBox
+        skill={skill}
+        title={title}
+        subtitle={subtitle}
+        subText={subText}
+        siteType={siteType}
+        pageType={pageType}
+        pageText={pageText}
+        projectComment={projectComment}
+      />
     </FlexBox>
   );
 };
