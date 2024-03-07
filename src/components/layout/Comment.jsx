@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import SkillBox from "../common/SkillBox";
+import GotoButton from "../common/Button";
 
 const ComtBox = () => {
   const skillArr = ["HTML", "CSS", "Javascripts", "Jquery"];
@@ -19,6 +20,9 @@ const ComtBox = () => {
         </div>
         <div className="skillBox">
           <SkillBox skill={skillArr} />
+        </div>
+        <div className="buttonBox">
+          <GotoButton />
         </div>
       </div>
     </ComtWrap>
@@ -61,6 +65,9 @@ const ComtWrap = styled.div`
   }
   .skillBox {
     margin-top: 32px;
+  }
+  .buttonBox {
+    margin-top: 70px;
   }
 `;
 
