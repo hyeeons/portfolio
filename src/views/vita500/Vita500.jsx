@@ -14,6 +14,9 @@ const Vita500 = () => {
         siteType="PC & Mobile"
         pageType="메인페이지"
         pageText="사이트 리뉴얼 기획/디자인 및 사이트 제작"
+        website="https://hyeeons.github.io/vita500/"
+        github="https://github.com/hyeeons/vita500"
+        originalSite="https://www.ekdp.com/brand/view.do?brandID=vita500"
         projectComment="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
 		quae id fugit officia animi! Libero atque corporis eligendi."
       />

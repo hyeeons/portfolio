@@ -12,6 +12,9 @@ const SitePage = ({
   pageType,
   pageText,
   projectComment,
+  website,
+  github,
+  originalSite,
 }) => {
   return (
     <FlexBox>
@@ -35,7 +38,11 @@ const SitePage = ({
             <SkillBox skill={skill} />
           </div>
           <div className="buttonBox">
-            <GotoButton />
+            <GotoButton
+              website={website}
+              github={github}
+              originalSite={originalSite}
+            />
           </div>
           <div className="text3">
             <p>{projectComment}</p>

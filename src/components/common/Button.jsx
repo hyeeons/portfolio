@@ -1,21 +1,21 @@
 import styled from "styled-components";
 import theme from "../../themes/theme";
 
-const GotoButton = () => {
+const GotoButton = ({ website, github, originalSite }) => {
   return (
     <GotoBtn>
       <div className="btnBox">
-        <a href="" target="_blank">
+        <a href={website} target="_blank">
           Website
         </a>
       </div>
       <div className="btnBox">
-        <a href="" target="_blank">
+        <a href={github} target="_blank">
           Github
         </a>
       </div>
       <div className="btnBox">
-        <a href="" target="_blank">
+        <a href={originalSite} target="_blank">
           기존 Site
         </a>
       </div>
