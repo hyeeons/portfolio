@@ -24,6 +24,18 @@ const ComtBox = () => {
         <div className="buttonBox">
           <GotoButton />
         </div>
+        <div className="text3">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            quae id fugit officia animi! Libero atque corporis eligendi
+            dignissimos ab veritatis velit, omnis iure aliquid aut. Officia
+            repellat iste autem. Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Quam sapiente minus suscipit dolores repellat
+            facilis consectetur. Dignissimos aspernatur nisi necessitatibus,
+            culpa, eius ipsam doloremque ab quod officia voluptatibus magni
+            inventore.
+          </p>
+        </div>
       </div>
     </ComtWrap>
   );
@@ -68,6 +80,9 @@ const ComtWrap = styled.div`
   }
   .buttonBox {
     margin-top: 70px;
+  }
+  .text3 {
+    margin-top: 16px;
   }
 `;
 
