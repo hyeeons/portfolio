@@ -1,8 +1,4 @@
-import { Outlet } from "react-router-dom";
-import Gnb from "../../components/layout/Gnb";
 import SitePage from "../../components/layout/SitePage";
-import styled from "styled-components";
-import ComtBox from "../../components/layout/Comment";
 
 const Vita500 = () => {
   const skillArr = ["HTML", "CSS", "Javascripts", "Jquery"];
