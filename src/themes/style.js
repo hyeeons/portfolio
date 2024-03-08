@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
 	padding: 0 auto;
 	list-style: none;
 	box-sizing: border-box;
-	color: ${theme.colors.txtdefault};
+	
 
 }
 body {

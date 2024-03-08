@@ -1,15 +1,13 @@
 import styled from "styled-components";
-import { IoHomeSharp } from "react-icons/io5";
+// import { IoHomeSharp } from "react-icons/io5";
 import { IoHome } from "react-icons/io5";
 import { FaUser } from "react-icons/fa6";
 import { LuMousePointerClick } from "react-icons/lu";
 import { RiSurveyFill } from "react-icons/ri";
-
 import { FaList } from "react-icons/fa6";
-import { FaMousePointer } from "react-icons/fa";
+// import { FaMousePointer } from "react-icons/fa";
 
 import theme from "../../themes/theme";
-import gsap from "gsap";
 
 const Header = () => {
   return (
@@ -59,7 +57,6 @@ const Hd = styled.div`
   }
   a {
     display: flex;
-    text-decoration: none;
     justify-content: space-between;
     padding: 13px;
     border-radius: 9999px;
@@ -69,15 +66,16 @@ const Hd = styled.div`
     color: ${theme.colors.orange};
     background: ${theme.colors.txtdefault};
     font-size: 20px;
-    padding: 16px 30px 15px 0px;
+    padding: 16px 40px 15px 0px;
     font-weight: 700;
-    text-align: center;
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 10;
+    text-align: center;
     border-radius: 50px;
-    width: 140px;
+    width: 160px;
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s ease;
@@ -87,9 +85,9 @@ const Hd = styled.div`
     top: 0%;
     right: 0px;
     z-index: 30;
-    font-size: 25px;
-    width: 25px;
-    height: 25px;
+    font-size: 51px;
+    width: 51px;
+    height: 51px;
     padding: 13px;
     border-radius: 50px;
     background: ${theme.colors.txtdefault};
