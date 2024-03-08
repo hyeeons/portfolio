@@ -1,7 +1,7 @@
 import SitePage from "../../components/layout/SitePage";
 
 const Vita500 = () => {
-  const skillArr = ["HTML", "CSS", "Javascripts", "Jquery"];
+  const skillArr = ["HTML", "CSS", "Javascripts", "jQuery"];
 
   return (
     <>
