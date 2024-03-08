@@ -31,17 +31,21 @@ const AboutMe = () => {
         <div className="contents">
           <div className="name">
             <h3>About Me</h3>
-            <h2>이현정 / LEE HYUN JUNG</h2>
+            <h2>이현정 / LEE HYUN JEONG</h2>
             <p>1994.04.16</p>
           </div>
           <div className="textBox">
             <h3>The Better Developer</h3>
+            <h4>더 나은 개발자가 되기 위해 끊임없이 연구합니다</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              voluptates non fuga illum incidunt ducimus, repudiandae quae illo
-              aliquam blanditiis alias id eum atque similique sint unde
-              voluptate! Eius, fuga. Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Consequatur, praesentium!
+              대학을 졸업하기 전 들어갔던 첫 회사에서 약 5년간 건강기능식품
+              학술/개발 업무를 수행하였습니다. 업무를 하며 수 많은 논문을 보았고
+              끈기와 문제해결능력, 팀원들과의 협력을 기를 수 있었습니다. 그리고
+              현재는 이를 기반으로 프론트엔드 개발자가 되기 위해 끊임없이
+              연구하고 있습니다. 좋은 개발자란 사용자의 입장에서 생각하고
+              문제해결능력이 좋으며 팀원들과의 협력을 중요시하는 개발자라고
+              생각합니다. 이러한 개발자가 되기 위해 능동적으로 문제를 해결하려
+              하고 새로운 기술 습득에도 관심을 가지고 있습니다.
             </p>
           </div>
           <div className="skills">
@@ -90,6 +94,10 @@ const Wrap = styled.div`
     font-weight: 700;
     margin-bottom: 15px;
   }
+  h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
 
   /* 컨텐츠 박스 */
   .contents {
@@ -100,6 +108,12 @@ const Wrap = styled.div`
     display: flex;
     flex-direction: column;
     gap: 40px;
+  }
+  .textBox {
+    p {
+      margin-top: 10px;
+      line-height: 1.5;
+    }
   }
   .skills {
     .logoBox {

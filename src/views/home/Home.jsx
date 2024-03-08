@@ -49,7 +49,7 @@ const Home = () => {
         <Line />
         <H1St className="hello">HELLO</H1St>
         <H1name className="front">Frontend Developer</H1name>
-        <H1name className="me">LEE HYUN JUNG</H1name>
+        <H1name className="me">LEE HYUN JEONG</H1name>
       </IntroBox>
       <BoxCon className="boxContain">
         <div className="lineBox">
