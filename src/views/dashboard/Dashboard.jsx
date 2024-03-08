@@ -1,5 +1,5 @@
 import SitePage from "../../components/layout/SitePage";
-
+import bg_Dashboard from "../../assets/images/projects/bg_dashboard.png";
 const Dashboard = () => {
   const skillArr = ["React", "Chakra UI"];
 
@@ -18,6 +18,7 @@ const Dashboard = () => {
       originalSite="https://horizon-ui.com/horizon-ui-chakra#/admin/default"
       projectComment="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
 		quae id fugit officia animi! Libero atque corporis eligendi."
+      bgImg={bg_Dashboard}
     />
   );
 };
