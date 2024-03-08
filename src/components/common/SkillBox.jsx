@@ -15,10 +15,10 @@ const SkillBox = ({ skill }) => {
 
 const BoxWrap = styled.div`
   display: flex;
-  gap: 10px;
+  gap: 5px;
   .box {
-    padding: 1.8% 4%;
-    border: 1px solid ${theme.colors.txtdefault};
+    padding: 1.8% 4.5%;
+    border: 1.5px solid ${theme.colors.txtdefault};
     border-radius: 3px;
     p {
       font-size: 16px;

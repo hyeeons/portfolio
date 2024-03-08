@@ -5,6 +5,8 @@ import { FaUser } from "react-icons/fa6";
 import { LuMousePointerClick } from "react-icons/lu";
 import { RiSurveyFill } from "react-icons/ri";
 import { FaList } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
+
 // import { FaMousePointer } from "react-icons/fa";
 
 import theme from "../../themes/theme";
@@ -38,9 +40,9 @@ const Header = () => {
           </a>
         </li>
         <li>
-          <a href="/contact">
-            <LuMousePointerClick className="icon" />
-            <span>Contact</span>
+          <a href="https://github.com/hyeeons">
+            <FaGithub className="icon" />
+            <span>Github</span>
           </a>
         </li>
       </ul>
@@ -66,7 +68,7 @@ const Hd = styled.div`
     color: ${theme.colors.orange};
     background: ${theme.colors.txtdefault};
     font-size: 20px;
-    padding: 16px 40px 15px 0px;
+    padding: 16px 40px 15px 10px;
     font-weight: 700;
     display: block;
     position: absolute;
@@ -75,7 +77,7 @@ const Hd = styled.div`
     z-index: 10;
     text-align: center;
     border-radius: 50px;
-    width: 160px;
+    width: 180px;
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s ease;

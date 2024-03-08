@@ -14,6 +14,7 @@ export const theme = {
     bgblack: "#080808",
     txtdefault: "#212126",
     txtDkNavy: "#384B6B",
+    grayLine: "#535862",
     // 임시
     green: "#40B16A",
     red: "red",

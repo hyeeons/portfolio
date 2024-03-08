@@ -29,13 +29,18 @@ const GotoBtn = styled.div`
   a {
     display: block;
     width: 110px;
-    padding: 7px 5px;
+    padding: 5px;
     font-size: 20px;
     text-decoration: none;
     text-align: center;
-    border: 1px solid ${theme.colors.txtdefault};
+    border: 2px solid ${theme.colors.grayLine};
+    box-shadow: 1px 1px ${theme.colors.grayLine};
     border-radius: 4px;
     color: ${theme.colors.txtdefault};
+    &:hover {
+      background-color: ${theme.colors.txtdefault};
+      color: ${theme.colors.white};
+    }
   }
 `;
 

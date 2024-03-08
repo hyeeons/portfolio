@@ -1,4 +1,6 @@
 import SitePage from "../../components/layout/SitePage";
+import bgVita500 from "../../assets/images/projects/bg_vita500_2.png";
+import theme from "../../themes/theme";
 
 const Vita500 = () => {
   const skillArr = ["HTML", "CSS", "Javascripts", "jQuery"];
@@ -18,7 +20,9 @@ const Vita500 = () => {
         github="https://github.com/hyeeons/vita500"
         originalSite="https://www.ekdp.com/brand/view.do?brandID=vita500"
         projectComment="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-		quae id fugit officia animi! Libero atque corporis eligendi."
+		quae id fugit officia animi! Libero atque corporis eligendi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+		quae id fugit officia animi! Libero atque corporis eligendi. "
+        bgImg={bgVita500}
       />
     </>
   );

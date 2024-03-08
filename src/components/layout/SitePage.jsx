@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import SkillBox from "../common/SkillBox";
 import GotoButton from "../common/Button";
+
 const SitePage = ({
   iframesrc,
   skill,
@@ -14,13 +15,14 @@ const SitePage = ({
   website,
   github,
   originalSite,
+  bgImg,
 }) => {
   return (
     <FlexBox>
       <PageBox>
         <iframe className="frame" src={iframesrc}></iframe>
       </PageBox>
-      <ComtWrap>
+      <ComtWrap bgImg={bgImg}>
         <div className="cont">
           <h2>{title}</h2>
           <div className="text1">
@@ -65,6 +67,7 @@ const PageBox = styled.div`
     height: 125%;
     border: 0;
     -ms-transform: scale(0.8);
+
     -moz-transform: scale(0.8);
     -o-transform: scale(0.8);
     -webkit-transform: scale(0.8);
@@ -81,6 +84,8 @@ const PageBox = styled.div`
 const ComtWrap = styled.div`
   width: 35%;
   height: 100vh;
+  background: url(${(props) => props.bgImg});
+  background-size: cover;
 
   /* background-color: lightcoral; */
   .cont {
@@ -99,7 +104,7 @@ const ComtWrap = styled.div`
   h3 {
     font-size: 20px;
     font-weight: 700;
-    margin-top: 15px;
+    margin-top: 10px;
   }
   h4 {
     font-size: 18px;
@@ -112,10 +117,10 @@ const ComtWrap = styled.div`
     margin-top: 20px;
   }
   .text2 {
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .skillBox {
-    margin-top: 32px;
+    margin-top: 18px;
   }
   .buttonBox {
     margin-top: 70px;

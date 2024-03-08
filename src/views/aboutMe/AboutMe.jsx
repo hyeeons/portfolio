@@ -10,6 +10,7 @@ import photoshop from "../../assets/images/icon/skill_photoshop.png";
 import illust from "../../assets/images/icon/skill_illust.png";
 import blender from "../../assets/images/icon/skill_blender.png";
 import theme from "../../themes/theme";
+import aboutme from "../../assets/images/common/aboutme.png";
 
 const AboutMe = () => {
   const SkillArr = [
@@ -27,7 +28,9 @@ const AboutMe = () => {
   return (
     <Wrap className="wrap">
       <div className="aboutMe">
-        <div className="imgBox"></div>
+        <div className="imgBox">
+          <img src={aboutme} alt="내 사진" />
+        </div>
         <div className="contents">
           <div className="name">
             <h3>About Me</h3>
@@ -66,7 +69,8 @@ const AboutMe = () => {
 
 const Wrap = styled.div`
   height: 100svh;
-  background-color: ${theme.colors.grayEc};
+  background-color: ${theme.colors.grayf9};
+
   .aboutMe {
     display: flex;
     gap: 150px;
@@ -78,9 +82,16 @@ const Wrap = styled.div`
   .imgBox {
     width: 450px;
     height: 450px;
-    background-color: lightblue;
+    /* background-color: ${theme.colors.orange}; */
+    background-color: #ebd39f;
     border-radius: 9999px;
     /* margin: 13% 0; */
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   /* 타이틀 */
