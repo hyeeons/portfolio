@@ -34,7 +34,7 @@ const Header = () => {
           </a>
         </li>
         <li>
-          <a href="/portfolio">
+          <a href="/react_portfolio">
             <FaList className="icon" />
             <span>Project</span>
           </a>

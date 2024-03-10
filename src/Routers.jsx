@@ -21,7 +21,7 @@ const Routers = () => {
           </Route>
 
           <Route element={<PfLayout />}>
-            <Route path="/projects" element={<Portfolio />} />
+            <Route path="/react_portfolio" element={<Portfolio />} />
             <Route path="/vita500" element={<Vita500 />} />
             <Route path="/samsunghospital" element={<SamsungHospital />} />
             <Route path="/dashboard" element={<Dashboard />} />

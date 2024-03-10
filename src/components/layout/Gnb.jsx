@@ -13,7 +13,7 @@ const Gnb = () => {
 
   const MenuArr = [
     {
-      path: "/portfolio",
+      path: "/react_portfolio",
       text: "포트폴리오 사이트",
       color: "portfolio",
     },
