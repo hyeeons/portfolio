@@ -5,7 +5,7 @@ import bg_hospital from "../../assets/images/projects/bg_hospital.png";
 import theme from "../../themes/theme";
 
 const SamsungHospital = () => {
-  const skillArr = ["HTML", "CSS", "Javascripts"];
+  const skillArr = ["HTML", "CSS", "Javascript"];
 
   return (
     <SitePage

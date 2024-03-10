@@ -5,7 +5,7 @@ const Portfolio = () => {
     "React",
     "Style-components",
     "Router",
-    "Javascripts",
+    "Javascript",
     "useEffect",
     "useState",
   ];
