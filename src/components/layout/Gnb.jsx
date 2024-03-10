@@ -78,9 +78,9 @@ const Gnb = () => {
     <GnbWrap>
       <div className="gnbcontainer">
         <div className="header">
-          <a href="/">
+          <Link to="/">
             <h1 style={{ color: SelectColor() }}>PROJECTS</h1>
-          </a>
+          </Link>
         </div>
         <div className="menuWrap">
           {MenuArr.map(({ path, icon, text, color }, index) => (

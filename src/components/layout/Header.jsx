@@ -35,7 +35,7 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to="https://github.com/hyeeons">
+          <Link to="https://github.com/hyeeons" target="_blank">
             <FaGithub className="icon" />
             <span>Github</span>
           </Link>

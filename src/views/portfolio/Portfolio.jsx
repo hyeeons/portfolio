@@ -12,7 +12,7 @@ const Portfolio = () => {
   return (
     <>
       <SitePage
-        iframesrc="https://hyeeons.github.io/react_portfolio/"
+        iframesrc="https://hyeeons.github.io/portfolio/"
         skill={skillArr}
         title={"포트폴리오 사이트\n(React 활용)"}
         subtitle="리액트를 활용하여 제작한 포트폴리오 사이트"
@@ -20,8 +20,8 @@ const Portfolio = () => {
         siteType="PC 사이트"
         pageType="컴포넌트를 활용하여 유지/보수가 간편한 사이트"
         pageText="Router, styled-components, Hook, Js 활용"
-        website="https://hyeeons.github.io/react_portfolio/"
-        github="https://github.com/hyeeons/react_portfolio"
+        website="https://hyeeons.github.io/portfolio/"
+        github="https://github.com/hyeeons/portfolio"
         originalSite=""
         display="none"
         projectComment="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
