@@ -10,40 +10,35 @@ import { FaGithub } from "react-icons/fa6";
 // import { FaMousePointer } from "react-icons/fa";
 
 import theme from "../../themes/theme";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <Hd className="wrap">
       <ul>
         <li>
-          <a href="/">
+          <Link to="/">
             <IoHome className="icon" />
             <span>Home</span>
-          </a>
+          </Link>
         </li>
-        {/* <li>
-          <a href="/contact">
-            <RiSurveyFill className="icon" />
-            <span>Contact</span>
-          </a>
-        </li> */}
         <li>
-          <a href="/aboutme">
+          <Link to="/aboutme">
             <FaUser className="icon" />
             <span>About Me</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/react_portfolio">
+          <Link to="/react_portfolio">
             <FaList className="icon" />
             <span>Project</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://github.com/hyeeons">
+          <Link to="https://github.com/hyeeons">
             <FaGithub className="icon" />
             <span>Github</span>
-          </a>
+          </Link>
         </li>
       </ul>
     </Hd>
