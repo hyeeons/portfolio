@@ -7,6 +7,7 @@ import Vita500 from "./views/vita500/Vita500";
 import SamsungHospital from "./views/samsungHospital/SamsungHospital";
 import Dashboard from "./views/dashboard/Dashboard";
 import JsDiary from "./views/jsDiary/JsDiary";
+import Portfolio from "./views/portfolio/Portfolio";
 
 const Routers = () => {
   return (
@@ -20,6 +21,7 @@ const Routers = () => {
           </Route>
 
           <Route element={<PfLayout />}>
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/vita500" element={<Vita500 />} />
             <Route path="/samsunghospital" element={<SamsungHospital />} />
             <Route path="/dashboard" element={<Dashboard />} />

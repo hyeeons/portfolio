@@ -13,30 +13,32 @@ const Gnb = () => {
 
   const MenuArr = [
     {
+      path: "/portfolio",
+      text: "포트폴리오 사이트",
+      color: "orangeVita",
+    },
+    {
       path: "/vita500",
-      //   icon: <PiDesktopFill />,
       text: "비타500 리뉴얼",
       color: "orangeVita",
     },
     {
       path: "/samsunghospital",
-      //   icon: <PiDesktop />,
       text: "삼성서울병원 리뉴얼",
       color: "blueSamsung",
     },
 
     {
       path: "/dashboard",
-      //   icon: <PiDesktop />,
       text: "Dashboard",
       color: "green",
     },
-    {
-      path: "/jsdiary",
-      //   icon: <PiDesktop />,
-      text: "Javascript Diary",
-      color: "red",
-    },
+    // {
+    //   path: "/jsdiary",
+    //   //   icon: <PiDesktop />,
+    //   text: "Javascript Diary",
+    //   color: "red",
+    // },
   ];
 
   const SelectColor = () => {
