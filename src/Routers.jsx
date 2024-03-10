@@ -12,7 +12,7 @@ import Portfolio from "./views/portfolio/Portfolio";
 const Routers = () => {
   return (
     <>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
