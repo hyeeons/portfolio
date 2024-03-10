@@ -15,6 +15,7 @@ const SkillBox = ({ skill }) => {
 
 const BoxWrap = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 5px;
   .box {
     padding: 1.8% 4.5%;

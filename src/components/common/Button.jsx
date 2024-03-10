@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import theme from "../../themes/theme";
 
-const GotoButton = ({ website, github, originalSite }) => {
+const GotoButton = ({ website, github, originalSite, display }) => {
   return (
     <GotoBtn>
       <div className="btnBox">
@@ -14,7 +14,7 @@ const GotoButton = ({ website, github, originalSite }) => {
           Github
         </a>
       </div>
-      <div className="btnBox">
+      <div className="btnBox orginalSite" style={{ display: display }}>
         <a href={originalSite} target="_blank">
           기존 Site
         </a>
@@ -26,6 +26,7 @@ const GotoButton = ({ website, github, originalSite }) => {
 const GotoBtn = styled.div`
   display: flex;
   gap: 10px;
+
   a {
     display: block;
     width: 110px;

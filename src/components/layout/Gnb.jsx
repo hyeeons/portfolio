@@ -15,7 +15,7 @@ const Gnb = () => {
     {
       path: "/portfolio",
       text: "포트폴리오 사이트",
-      color: "orangeVita",
+      color: "portfolio",
     },
     {
       path: "/vita500",
@@ -31,7 +31,7 @@ const Gnb = () => {
     {
       path: "/dashboard",
       text: "Dashboard",
-      color: "green",
+      color: "dashboard",
     },
     // {
     //   path: "/jsdiary",
@@ -59,7 +59,7 @@ const Gnb = () => {
           ? `linear-gradient(
 		to bottom,
 		transparent 70%,
-		${SelectColor()} 30%`
+		${SelectColor()} 30% `
           : "",
     };
   };
@@ -79,7 +79,7 @@ const Gnb = () => {
       <div className="gnbcontainer">
         <div className="header">
           <a href="/">
-            <h1 style={{ color: SelectColor() }}>Portfolio</h1>
+            <h1 style={{ color: SelectColor() }}>PROJECTS</h1>
           </a>
         </div>
         <div className="menuWrap">

@@ -1,25 +1,33 @@
 import SitePage from "../../components/layout/SitePage";
-
+import bgPortfolio from "../../assets/images/projects/bg_portfolio.png";
 const Portfolio = () => {
-  const skillArr = ["React"];
+  const skillArr = [
+    "React",
+    "Style-components",
+    "Router",
+    "Javascripts",
+    "useEffect",
+    "useState",
+  ];
   return (
     <>
       <SitePage
-        iframesrc="https://hyeeons.github.io/vita500/"
+        iframesrc="https://hyeeons.github.io/react_portfolio/"
         skill={skillArr}
-        title="비타500 리뉴얼 사이트"
-        subtitle="광동제약의 비타500 브랜드 소개 페이지"
+        title={"포트폴리오 사이트\n(React 활용)"}
+        subtitle="리액트를 활용하여 제작한 포트폴리오 사이트"
         subText="100% 개인작업"
-        siteType="PC & Mobile"
-        pageType="메인페이지"
-        pageText="사이트 리뉴얼 기획/디자인 및 사이트 제작"
-        website="https://hyeeons.github.io/vita500/"
-        github="https://github.com/hyeeons/vita500"
-        originalSite="https://www.ekdp.com/brand/view.do?brandID=vita500"
+        siteType="PC 사이트"
+        pageType="컴포넌트를 활용하여 유지/보수가 간편한 사이트"
+        pageText="Router, style-components, Hook, Js 활용"
+        website="https://hyeeons.github.io/react_portfolio/"
+        github="https://github.com/hyeeons/react_portfolio"
+        originalSite=""
+        display="none"
         projectComment="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
 	quae id fugit officia animi! Libero atque corporis eligendi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
 	quae id fugit officia animi! Libero atque corporis eligendi. "
-        // bgImg={bgVita500}
+        bgImg={bgPortfolio}
       />
     </>
   );

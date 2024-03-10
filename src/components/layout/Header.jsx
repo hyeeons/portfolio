@@ -21,12 +21,12 @@ const Header = () => {
             <span>Home</span>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="/contact">
             <RiSurveyFill className="icon" />
             <span>Contact</span>
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="/aboutme">
             <FaUser className="icon" />
@@ -34,7 +34,7 @@ const Header = () => {
           </a>
         </li>
         <li>
-          <a href="/vita500">
+          <a href="/portfolio">
             <FaList className="icon" />
             <span>Project</span>
           </a>

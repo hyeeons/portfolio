@@ -16,6 +16,7 @@ const SitePage = ({
   github,
   originalSite,
   bgImg,
+  display,
 }) => {
   return (
     <FlexBox>
@@ -43,6 +44,7 @@ const SitePage = ({
               website={website}
               github={github}
               originalSite={originalSite}
+              display={display}
             />
           </div>
           <div className="text3">
@@ -67,7 +69,6 @@ const PageBox = styled.div`
     height: 125%;
     border: 0;
     -ms-transform: scale(0.8);
-
     -moz-transform: scale(0.8);
     -o-transform: scale(0.8);
     -webkit-transform: scale(0.8);
@@ -100,6 +101,7 @@ const ComtWrap = styled.div`
     font-weight: 700;
     padding: 30px 0px;
     border-bottom: 1px solid black;
+    white-space: nowrap;
   }
   h3 {
     font-size: 20px;
