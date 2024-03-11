@@ -19,9 +19,7 @@ const Vita500 = () => {
         website="https://hyeeons.github.io/vita500/"
         github="https://github.com/hyeeons/vita500"
         figma="https://www.figma.com/file/4HJHz7EWSDft9uy5ZpWqvv/%EA%B4%91%EB%8F%99%EC%A0%9C%EC%95%BD_%EB%B9%84%ED%83%80500-%EB%A6%AC%EB%89%B4%EC%96%BC%EC%82%AC%EC%9D%B4%ED%8A%B8?type=design&node-id=0%3A1&mode=design&t=QQ9MjlkYaBsY2r1A-1"
-        projectComment="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-		quae id fugit officia animi! Libero atque corporis eligendi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-		quae id fugit officia animi! Libero atque corporis eligendi. "
+        projectComment="광동제약의 비타500 제품 브랜드 소개 페이지입니다. HTML과 CSS를 활용하여 제작한 첫 사이트이며, 브랜드가 가지고 있는 상큼한 이미지를 표현하기 위해 일러스트를 추가했습니다. 또한 비타민이 차오르는 느낌을 주기 위하여 메인 제품 소개의 배경을 그라데이션으로 표현하고 스크롤에 따라 콘텐츠가 등장하게 함으로써 동적인 표현을 추가하였습니다. 또한 비타500의 콘텐츠와 다양한 제품을 소개하여 브랜드 소개에 중점을 두었습니다."
         bgImg={bgVita500}
       />
     </>
