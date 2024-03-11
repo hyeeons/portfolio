@@ -22,8 +22,7 @@ const Portfolio = () => {
         pageText="Router, styled-components, Hook, Js 활용"
         website="https://hyeeons.github.io/portfolio/"
         github="https://github.com/hyeeons/portfolio"
-        originalSite=""
-        display="none"
+        figma=""
         projectComment="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
 	quae id fugit officia animi! Libero atque corporis eligendi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
 	quae id fugit officia animi! Libero atque corporis eligendi. "

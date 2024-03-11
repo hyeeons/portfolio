@@ -19,7 +19,7 @@ const SamsungHospital = () => {
       pageText="사이트 리뉴얼 기획/디자인 및 사이트 제작"
       website="https://hyeeons.github.io/SamsungHospital_re/healthCare.html"
       github="https://github.com/hyeeons/SamsungHospital_re"
-      originalSite="http://www.samsunghospital.com/home/healthInfo/main.do"
+      figma=""
       projectComment="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
 		quae id fugit officia animi! Libero atque corporis eligendi."
       bgImg={bg_hospital}

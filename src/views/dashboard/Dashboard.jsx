@@ -18,6 +18,7 @@ const Dashboard = () => {
       originalSite="https://horizon-ui.com/horizon-ui-chakra#/admin/default"
       projectComment="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
 		quae id fugit officia animi! Libero atque corporis eligendi."
+      display="none"
       bgImg={bg_Dashboard}
     />
   );

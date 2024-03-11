@@ -14,9 +14,9 @@ const SitePage = ({
   projectComment,
   website,
   github,
-  originalSite,
   bgImg,
   display,
+  figma,
 }) => {
   return (
     <FlexBox>
@@ -43,7 +43,7 @@ const SitePage = ({
             <GotoButton
               website={website}
               github={github}
-              originalSite={originalSite}
+              figma={figma}
               display={display}
             />
           </div>
