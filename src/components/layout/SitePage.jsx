@@ -93,7 +93,7 @@ const ComtWrap = styled.div`
     width: 360px;
     height: 763px;
     /* background-color: lightblue; */
-    margin: 25% auto;
+    margin: 15% auto;
   }
   /* 폰트 */
   h2 {
@@ -102,6 +102,7 @@ const ComtWrap = styled.div`
     padding: 30px 0px;
     border-bottom: 1px solid black;
     white-space: nowrap;
+    letter-spacing: -0.5px;
   }
   h3 {
     font-size: 20px;
@@ -125,10 +126,14 @@ const ComtWrap = styled.div`
     margin-top: 18px;
   }
   .buttonBox {
-    margin-top: 70px;
+    margin-top: 60px;
   }
   .text3 {
     margin-top: 16px;
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
   }
 `;
 

@@ -3,7 +3,7 @@ import bgVita500 from "../../assets/images/projects/bg_vita500_2.png";
 import theme from "../../themes/theme";
 
 const Vita500 = () => {
-  const skillArr = ["HTML", "CSS", "Javascript", "jQuery"];
+  const skillArr = ["HTML", "CSS", "Javascript", "jQuery", "Gsap"];
 
   return (
     <>
