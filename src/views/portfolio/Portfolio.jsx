@@ -22,7 +22,7 @@ const Portfolio = () => {
         pageText="Router, styled-components, Hook, Js 활용"
         website="https://hyeeons.github.io/portfolio/"
         github="https://github.com/hyeeons/portfolio"
-        figma=""
+        figma="https://www.figma.com/file/jpFsCMMhbWoSa8f38jh3lU/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4(React%ED%99%9C%EC%9A%A9)?type=design&node-id=0%3A1&mode=design&t=jIueZ0rryuS4TiTT-1"
         projectComment="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
 	quae id fugit officia animi! Libero atque corporis eligendi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
 	quae id fugit officia animi! Libero atque corporis eligendi. "
