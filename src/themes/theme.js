@@ -5,7 +5,7 @@ export const theme = {
     orangeVita: "#FD790D",
     orange: "#ffcc5f",
     blueSamsung: "#0B50A1",
-    portfolio: "#048dd7",
+    portfolio: "#22933d",
     dashboard: "#4F37B7",
     grayF9: "#F9F9F9",
     grayEc: "#ececec",

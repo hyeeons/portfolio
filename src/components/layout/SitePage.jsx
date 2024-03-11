@@ -85,8 +85,6 @@ const PageBox = styled.div`
 const ComtWrap = styled.div`
   width: 35%;
   height: 100vh;
-  background: url(${(props) => props.bgImg});
-  background-size: cover;
 
   /* background-color: lightcoral; */
   .cont {
@@ -94,6 +92,8 @@ const ComtWrap = styled.div`
     height: 763px;
     /* background-color: lightblue; */
     margin: 15% auto;
+    background: url(${(props) => props.bgImg});
+    background-size: cover;
   }
   /* 폰트 */
   h2 {

@@ -63,7 +63,7 @@ const Hd = styled.div`
     color: ${theme.colors.orange};
     background: ${theme.colors.txtdefault};
     font-size: 20px;
-    padding: 16px 40px 15px 10px;
+    padding: 13px 40px 13px 10px;
     font-weight: 700;
     display: block;
     position: absolute;
