@@ -1,7 +1,7 @@
 import SitePage from "../../components/layout/SitePage";
 import bg_Dashboard from "../../assets/images/projects/bg_dashboard.png";
 const Dashboard = () => {
-  const skillArr = ["React", "Chakra UI", "useState"];
+  const skillArr = ["React", "Chakra UI", "ApexCharts", "useState"];
 
   return (
     <SitePage
