@@ -11,11 +11,11 @@ const Home = () => {
   const [isTyping, setIsTyping] = useState(false);
   useEffect(() => {
     const tl = gsap.timeline();
-    tl.fromTo(".hello", { opacity: 0 }, { opacity: 1, duration: 2 });
+    tl.fromTo(".hello", { opacity: 0 }, { opacity: 1, duration: 0.4 });
     tl.to(".hello", { opacity: 0 });
-    tl.fromTo(".front", { opacity: 0 }, { opacity: 1, duration: 2 });
+    tl.fromTo(".front", { opacity: 0 }, { opacity: 1, duration: 0.4 });
     tl.to(".front", { opacity: 0 });
-    tl.fromTo(".me", { opacity: 0 }, { opacity: 1, duration: 2 });
+    tl.fromTo(".me", { opacity: 0 }, { opacity: 1, duration: 0.4 });
     tl.to(".me", { opacity: 0 });
 
     // 박스
