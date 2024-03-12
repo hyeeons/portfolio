@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
 	padding: 0 auto;
 	list-style: none;
 	box-sizing: border-box;
+	
 }
 body {
 	background-color: ${theme.colors.grayF9};
@@ -17,6 +18,7 @@ body {
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 	line-height: 1.3;
+	font-size: 16px;
 	/* .link {
   text-decoration: none;
 box-shadow: none;
