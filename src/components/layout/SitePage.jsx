@@ -91,7 +91,7 @@ const ComtWrap = styled.div`
 
   /* background-color: lightcoral; */
   .cont {
-    width: 360px;
+    width: 77%;
     height: 763px;
     /* background-color: lightblue; */
     margin: 15% auto;
