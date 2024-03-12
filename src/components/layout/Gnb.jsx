@@ -111,8 +111,8 @@ const Gnb = () => {
 
 const GnbWrap = styled.div`
   background-color: ${theme.colors.grayF9};
-  width: 17.625rem;
-  height: 100svh;
+  width: 282px;
+  height: 100vh;
   box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 0%;
@@ -122,29 +122,29 @@ const GnbWrap = styled.div`
     padding-top: 84px;
   }
   .header {
-    width: 14.8125rem;
-    height: 5.75rem;
+    width: 237px;
+    height: 92px;
     margin: 0 auto;
     border-bottom: 1px solid ${theme.colors.gnbLine};
   }
   h1 {
-    font-size: 1.875rem;
+    font-size: 30px;
     font-weight: 700;
     text-align: center;
-    padding: 1.875rem 0;
+    padding: 30px 0;
     /* ${theme.colors.gnbLine} */
     /* color: ${theme.colors.orangeVita}; */
   }
   .menuWrap {
     /* background: lightblue; */
-    width: 14.8125rem;
-    height: 44.125rem;
-    margin: 1.875rem auto 0;
+    width: 237px;
+    height: 706px;
+    margin: 30px auto 0;
   }
 
   .menu-box {
-    height: 2.5rem;
-    padding: 0 1.25rem;
+    height: 40px;
+    padding: 0 20px;
     display: flex;
     align-items: flex-end;
     cursor: pointer;
@@ -153,7 +153,7 @@ const GnbWrap = styled.div`
       font-size: 19px;
     }
     .menu-icon {
-      padding-right: 0.4375rem;
+      padding-right: 7px;
     }
   }
 `;
