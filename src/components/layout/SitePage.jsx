@@ -126,10 +126,10 @@ const ComtWrap = styled.div`
     margin-top: 18px;
   }
   .buttonBox {
-    margin-top: 60px;
+    margin-top: 50px;
   }
   .text3 {
-    margin-top: 16px;
+    margin-top: 14px;
     p {
       font-size: 18px;
       line-height: 1.5;
