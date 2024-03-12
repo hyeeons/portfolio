@@ -30,21 +30,29 @@ const HeaderSt = styled.div`
 export const PfLayout = () => {
   return (
     <>
-      <Gnb />
-      <Outlet />
-      <HdButton className="hdButton">
-        <Link to="/">
-          <IoHome className="icon" />
-        </Link>
+      <PfLayoutSt>
+        <Outlet />
+        <Gnb />
+        <div className="button">
+          <HdButton className="hdButton">
+            <Link to="/">
+              <IoHome className="icon" />
+            </Link>
 
-        <Link to="https://github.com/hyeeons" target="_blank">
-          <FaGithub className="icon" />
-        </Link>
-      </HdButton>
+            <Link to="https://github.com/hyeeons" target="_blank">
+              <FaGithub className="icon" />
+            </Link>
+          </HdButton>
+        </div>
+      </PfLayoutSt>
     </>
   );
 };
 
+const PfLayoutSt = styled.div`
+  /* display: flex; */
+  /* justify-content: space-between; */
+`;
 const HdButton = styled.div`
   position: absolute;
   display: flex;

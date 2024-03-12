@@ -58,9 +58,12 @@ const SitePage = ({
 
 const FlexBox = styled.div`
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 const PageBox = styled.div`
-  width: 90%;
+  /* width: 90%; */
+  flex-grow: 1;
   height: 100vh;
   overflow: hidden;
   margin-left: 283px;
@@ -83,7 +86,7 @@ const PageBox = styled.div`
 `;
 // comment
 const ComtWrap = styled.div`
-  width: 35%;
+  width: 470px;
   height: 100vh;
 
   /* background-color: lightcoral; */
