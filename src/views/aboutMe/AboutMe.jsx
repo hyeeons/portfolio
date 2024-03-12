@@ -10,7 +10,7 @@ import photoshop from "../../assets/images/icon/skill_photoshop.png";
 import illust from "../../assets/images/icon/skill_illust.png";
 import blender from "../../assets/images/icon/skill_blender.png";
 import theme from "../../themes/theme";
-import aboutme from "../../assets/images/common/aboutme.png";
+import aboutme from "../../assets/images/common/aboutme_2.png";
 
 const AboutMe = () => {
   const SkillArr = [
@@ -83,13 +83,16 @@ const Wrap = styled.div`
     width: 450px;
     height: 450px;
     /* background-color: ${theme.colors.orange}; */
-    background-color: #ebd39f;
+    /* background-color: #ebd39f; */
+    /* background-color: #d1d1d1; */
+    background-color: #e0e0e0;
     border-radius: 9999px;
     /* margin: 13% 0; */
     img {
       display: block;
-      width: 100%;
-      height: 100%;
+      width: 80%;
+      height: 80%;
+      margin: 5% auto;
       object-fit: cover;
     }
   }
