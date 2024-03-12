@@ -102,7 +102,7 @@ const ComtWrap = styled.div`
     padding: 30px 0px;
     border-bottom: 1px solid black;
     white-space: nowrap;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.7px;
   }
   h3 {
     font-size: 20px;
@@ -111,7 +111,7 @@ const ComtWrap = styled.div`
   }
   h4 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 5px;
   }
 
