@@ -66,7 +66,7 @@ const PageBox = styled.div`
   flex-grow: 1;
   height: 100vh;
   overflow: hidden;
-  margin-left: 283px;
+  margin-left: 17.6875rem;
   .frame {
     width: 130%;
     height: 125%;
@@ -86,13 +86,13 @@ const PageBox = styled.div`
 `;
 // comment
 const ComtWrap = styled.div`
-  width: 470px;
+  width: 29.375rem;
   height: 100vh;
 
   /* background-color: lightcoral; */
   .cont {
     width: 77%;
-    height: 763px;
+    height: 47.6875rem;
     /* background-color: lightblue; */
     margin: 15% auto;
     background: url(${(props) => props.bgImg});
@@ -100,41 +100,41 @@ const ComtWrap = styled.div`
   }
   /* 폰트 */
   h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 700;
-    padding: 30px 0px;
+    padding: 1.875rem 0px;
     border-bottom: 1px solid black;
     white-space: nowrap;
     letter-spacing: -0.7px;
   }
   h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
   h4 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
-    margin-top: 5px;
+    margin-top: 0.3125rem;
   }
 
   /* 텍스트 박스 */
   .text1 {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
   .text2 {
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
   .skillBox {
-    margin-top: 18px;
+    margin-top: 1.125rem;
   }
   .buttonBox {
-    margin-top: 50px;
+    margin-top: 3.125rem;
   }
   .text3 {
-    margin-top: 14px;
+    margin-top: 0.875rem;
     p {
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 1.5;
     }
   }
