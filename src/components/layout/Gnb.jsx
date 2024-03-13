@@ -59,11 +59,11 @@ const Gnb = () => {
           ? `linear-gradient(
 		to bottom,
 		transparent 70%,
-		${SelectColor()} 30% `
+		rgba(${SelectColor()}, 0.5) 30%)`
           : "",
     };
   };
-
+  // ${SelectColor()} 30% `
   const CurrentMenu = () => {
     const currentPath = location.pathname;
     const index = MenuArr.findIndex((menu) => menu.path === currentPath);
@@ -79,7 +79,7 @@ const Gnb = () => {
       <div className="gnbcontainer">
         <div className="header">
           <Link to="/">
-            <h1 style={{ color: SelectColor() }}>PROJECTS</h1>
+            <h1 style={{ color: `rgb(${SelectColor()})` }}>PROJECTS</h1>
           </Link>
         </div>
         <div className="menuWrap">

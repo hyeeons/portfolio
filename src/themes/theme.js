@@ -2,11 +2,11 @@ import { createContext } from "react";
 
 export const theme = {
   colors: {
-    orangeVita: "#FD790D",
+    orangeVita: "253, 121, 13",
+    portfolio: "15, 116, 138",
+    blueSamsung: "11, 80, 161",
+    dashboard: "79, 55, 183",
     orange: "#ffcc5f",
-    blueSamsung: "#0B50A1",
-    portfolio: "#0f748a",
-    dashboard: "#4F37B7",
     grayF9: "#F9F9F9",
     grayEc: "#ececec",
     grayDefault: "#9CA7BA",
