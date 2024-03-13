@@ -18,7 +18,7 @@ body {
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 	line-height: 1.3;
-	font-size: 16px;
+	font-size: 14px;
 	/* .link {
   text-decoration: none;
 box-shadow: none;
