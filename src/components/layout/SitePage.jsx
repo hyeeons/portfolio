@@ -92,7 +92,7 @@ const ComtWrap = styled.div`
   /* background-color: lightcoral; */
   .cont {
     width: 77%;
-    height: 47.6875rem;
+    /* height: 47.6875rem; */
     /* background-color: lightblue; */
     margin: 15% auto;
     background: url(${(props) => props.bgImg});
@@ -129,7 +129,7 @@ const ComtWrap = styled.div`
     margin-top: 1.125rem;
   }
   .buttonBox {
-    margin-top: 3.125rem;
+    margin-top: 3rem;
   }
   .text3 {
     margin-top: 0.875rem;
