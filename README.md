@@ -8,8 +8,6 @@ React를 활용한 포트폴리오 사이트 👉[  보러가기 ](https://hyeeo
 
 ### 🛠 활용언어 및 기술
 - React
-- HTML & SCSS
-- Javascript
 - Styled-components
 - Gsap 
 - Router
