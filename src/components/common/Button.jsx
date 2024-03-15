@@ -29,9 +29,9 @@ const GotoBtn = styled.div`
 
   a {
     display: block;
-    width: 100px;
-    padding: 5px;
-    font-size: 18px;
+    width: 98px;
+    padding: 4px;
+    font-size: 17px;
     text-decoration: none;
     text-align: center;
     border: 2px solid ${theme.colors.grayLine};

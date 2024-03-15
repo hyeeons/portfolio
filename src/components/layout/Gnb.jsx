@@ -111,7 +111,7 @@ const Gnb = () => {
 
 const GnbWrap = styled.div`
   background-color: ${theme.colors.grayF9};
-  width: 282px;
+  width: 270px;
   height: 100vh;
   box-shadow: 4px 0px 4px hsla(0, 0%, 0%, 0.1);
   position: absolute;
@@ -137,9 +137,9 @@ const GnbWrap = styled.div`
   }
   .menuWrap {
     /* background: lightblue; */
-    width: 237px;
-    height: 706px;
-    margin: 30px auto 0;
+    width: 240px;
+    margin: 18px auto 0;
+    padding: 0 10px;
   }
 
   .menu-box {
@@ -150,7 +150,7 @@ const GnbWrap = styled.div`
     cursor: pointer;
 
     .menu {
-      font-size: 19px;
+      font-size: 18px;
     }
     .menu-icon {
       padding-right: 7px;

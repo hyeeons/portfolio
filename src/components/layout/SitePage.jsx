@@ -66,7 +66,7 @@ const PageBox = styled.div`
   flex-grow: 1;
   height: 100vh;
   overflow: hidden;
-  margin-left: 17.6875rem;
+  margin-left: 270px;
   .frame {
     width: 130%;
     height: 125%;
@@ -86,12 +86,12 @@ const PageBox = styled.div`
 `;
 // comment
 const ComtWrap = styled.div`
-  width: 430px;
+  width: 410px;
   height: 100vh;
 
   /* background-color: lightcoral; */
   .cont {
-    width: 340px;
+    width: 310px;
     /* height: 47.6875rem; */
     /* background-color: lightblue; */
     margin: 25% auto;
@@ -100,7 +100,7 @@ const ComtWrap = styled.div`
   }
   /* 폰트 */
   h2 {
-    font-size: 28px;
+    font-size: 27px;
     font-weight: 700;
     padding: 20px 0px;
     border-bottom: 1px solid black;
@@ -108,12 +108,12 @@ const ComtWrap = styled.div`
     letter-spacing: -1px;
   }
   h3 {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
     margin-top: 8px;
   }
   h4 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     margin-top: 5px;
   }
@@ -134,7 +134,7 @@ const ComtWrap = styled.div`
   .text3 {
     margin-top: 12px;
     p {
-      font-size: 17px;
+      font-size: 16px;
       line-height: 1.5;
     }
   }
