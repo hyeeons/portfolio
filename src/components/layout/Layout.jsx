@@ -31,7 +31,6 @@ export const PfLayout = () => {
   return (
     <>
       <PfLayoutSt>
-        <Outlet />
         <Gnb />
         <div className="button">
           <HdButton className="hdButton">
@@ -45,6 +44,7 @@ export const PfLayout = () => {
           </HdButton>
         </div>
       </PfLayoutSt>
+      <Outlet />
     </>
   );
 };

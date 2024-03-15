@@ -2,12 +2,14 @@ import { createGlobalStyle } from "styled-components";
 import theme from "./theme";
 
 const GlobalStyle = createGlobalStyle`
+
 * {
 	text-decoration: none;
 	margin: 0 auto;
 	padding: 0 auto;
 	list-style: none;
 	box-sizing: border-box;
+	font-size: 90%;
 	
 }
 body {
@@ -18,7 +20,7 @@ body {
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 	line-height: 1.3;
-	font-size: 14px;
+	/* font-size: 14px; */
 	/* .link {
   text-decoration: none;
 box-shadow: none;

@@ -86,12 +86,12 @@ const PageBox = styled.div`
 `;
 // comment
 const ComtWrap = styled.div`
-  width: 29.375rem;
+  width: 430px;
   height: 100vh;
 
   /* background-color: lightcoral; */
   .cont {
-    width: 77%;
+    width: 75%;
     /* height: 47.6875rem; */
     /* background-color: lightblue; */
     margin: 15% auto;
@@ -100,41 +100,41 @@ const ComtWrap = styled.div`
   }
   /* 폰트 */
   h2 {
-    font-size: 1.875rem;
+    font-size: 28px;
     font-weight: 700;
-    padding: 1.875rem 0px;
+    padding: 28px 0px;
     border-bottom: 1px solid black;
     white-space: nowrap;
-    letter-spacing: -0.7px;
+    letter-spacing: -1px;
   }
   h3 {
-    font-size: 1.25rem;
+    font-size: 18px;
     font-weight: 700;
-    margin-top: 0.625rem;
+    margin-top: 10px;
   }
   h4 {
-    font-size: 1.125rem;
+    font-size: 16px;
     font-weight: 500;
-    margin-top: 0.3125rem;
+    margin-top: 5px;
   }
 
   /* 텍스트 박스 */
   .text1 {
-    margin-top: 1.25rem;
+    margin-top: 18px;
   }
   .text2 {
-    margin-top: 2.5rem;
+    margin-top: 38px;
   }
   .skillBox {
-    margin-top: 1.125rem;
+    margin-top: 16px;
   }
   .buttonBox {
-    margin-top: 3rem;
+    margin-top: 46px;
   }
   .text3 {
-    margin-top: 0.875rem;
+    margin-top: 12px;
     p {
-      font-size: 1.125rem;
+      font-size: 16px;
       line-height: 1.5;
     }
   }
