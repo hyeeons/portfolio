@@ -1,4 +1,10 @@
-import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Outlet,
+  Route,
+  Routes,
+  HashRouter,
+} from "react-router-dom";
 import Layout, { PfLayout } from "./components/layout/Layout";
 import Home from "./views/home/Home";
 import AboutMe from "./views/aboutMe/AboutMe";
@@ -12,7 +18,7 @@ import Portfolio from "./views/portfolio/Portfolio";
 const Routers = () => {
   return (
     <>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Router>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<Home />} />
@@ -28,7 +34,7 @@ const Routers = () => {
             <Route path="/jsdiary" element={<JsDiary />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </Router>
     </>
   );
 };
