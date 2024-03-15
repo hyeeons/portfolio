@@ -91,10 +91,10 @@ const ComtWrap = styled.div`
 
   /* background-color: lightcoral; */
   .cont {
-    width: 75%;
+    width: 340px;
     /* height: 47.6875rem; */
     /* background-color: lightblue; */
-    margin: 15% auto;
+    margin: 25% auto;
     background: url(${(props) => props.bgImg});
     background-size: cover;
   }
@@ -102,7 +102,7 @@ const ComtWrap = styled.div`
   h2 {
     font-size: 28px;
     font-weight: 700;
-    padding: 28px 0px;
+    padding: 20px 0px;
     border-bottom: 1px solid black;
     white-space: nowrap;
     letter-spacing: -1px;
@@ -110,7 +110,7 @@ const ComtWrap = styled.div`
   h3 {
     font-size: 18px;
     font-weight: 700;
-    margin-top: 10px;
+    margin-top: 8px;
   }
   h4 {
     font-size: 16px;
@@ -123,18 +123,18 @@ const ComtWrap = styled.div`
     margin-top: 18px;
   }
   .text2 {
-    margin-top: 38px;
+    margin-top: 28px;
   }
   .skillBox {
     margin-top: 16px;
   }
   .buttonBox {
-    margin-top: 46px;
+    margin-top: 44px;
   }
   .text3 {
     margin-top: 12px;
     p {
-      font-size: 16px;
+      font-size: 17px;
       line-height: 1.5;
     }
   }

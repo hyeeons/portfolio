@@ -113,7 +113,7 @@ const GnbWrap = styled.div`
   background-color: ${theme.colors.grayF9};
   width: 282px;
   height: 100vh;
-  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 0px 4px hsla(0, 0%, 0%, 0.1);
   position: absolute;
   top: 0%;
   left: 0;

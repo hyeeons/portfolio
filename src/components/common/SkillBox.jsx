@@ -18,7 +18,7 @@ const BoxWrap = styled.div`
   flex-wrap: wrap;
   gap: 5px;
   .box {
-    padding: 1.8% 4.5%;
+    padding: 1.5% 4.5%;
     border: 1.5px solid ${theme.colors.txtdefault};
     border-radius: 3px;
     p {
