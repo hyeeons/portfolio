@@ -9,6 +9,8 @@ import figma from "../../assets/images/icon/skill_figma.png";
 import photoshop from "../../assets/images/icon/skill_photoshop.png";
 import illust from "../../assets/images/icon/skill_illust.png";
 import blender from "../../assets/images/icon/skill_blender.png";
+import ts from "../../assets/images/icon/skill_ts.png";
+import tailwind from "../../assets/images/icon/skill_tailwind.png";
 import theme from "../../themes/theme";
 import aboutme from "../../assets/images/common/aboutme_2.png";
 
@@ -24,6 +26,8 @@ const AboutMe = () => {
     { skill: "photoshop", img: photoshop },
     { skill: "illust", img: illust },
     { skill: "blender", img: blender },
+    { skill: "typescript", img: ts },
+    { skill: "tailwind", img: tailwind },
   ];
   return (
     <Wrap className="wrap">
