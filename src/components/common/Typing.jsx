@@ -21,11 +21,12 @@ const Typing = ({ text, isTyping }) => {
 };
 
 const TextSt = styled.p`
-  font-size: 35px;
-  line-height: 130%;
-  font-weight: 700;
+  font-size: 33px;
+  line-height: 1.4;
+  font-weight: 600;
   text-align: center;
   padding: 20% 10% 3%;
+  letter-spacing: 0.5px;
   white-space: pre-line;
 `;
 export default Typing;
