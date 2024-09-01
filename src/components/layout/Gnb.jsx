@@ -117,7 +117,7 @@ const Gnb = () => {
 const GnbWrap = styled.div`
   background-color: ${theme.colors.grayF9};
   /* width: 270px; */
-  width: 15%;
+  width: 14.5%;
   height: 100vh;
   box-shadow: 4px 0px 4px hsla(0, 0%, 0%, 0.1);
   position: absolute;
@@ -128,7 +128,8 @@ const GnbWrap = styled.div`
     padding-top: 84px;
   }
   .gnb {
-    width: 237px;
+	width: 100%;
+    /* width: 237px; */
     height: 92px;
     margin: 0 auto;
     border-bottom: 1px solid ${theme.colors.gnbLine};

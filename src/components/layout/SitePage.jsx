@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import SkillBox from "../common/SkillBox";
 import GotoButton from "../common/Button";
+import { FaMobileAlt } from "react-icons/fa";
+import theme from "../../themes/theme";
+import { useState } from "react";
+
+
 
 const SitePage = ({
   iframesrc,
@@ -18,12 +23,33 @@ const SitePage = ({
   display,
   figma,
 }) => {
+
+	// 모바일 보여주기
+	const [showMobileBox, setShowMobileBox] = useState(false);
+
+	const toggleMobileBox = ()=> {
+		setShowMobileBox(!showMobileBox);
+	};
+
   return (
     <FlexBox>
       <PageBox>
         <iframe className="iframe" src={iframesrc}></iframe>
+		{showMobileBox && (
+			<div className="mobile-box-wrap">
+			<div className="mobile-box"><iframe className="iframe-mb" src={iframesrc} ></iframe>
+			</div>
+			</div>
+		)};
+		
+		
       </PageBox>
       <ComtWrap bgImg={bgImg}>
+		<div className="mb-btn-box" onClick={toggleMobileBox}>
+			모바일 보기 
+			{/* <FaMobileAlt className="mb-icon"/> */}
+			
+		</div>
         <div className="cont">
           <h2>{title}</h2>
           <div className="text1">
@@ -66,7 +92,8 @@ const PageBox = styled.div`
   flex-grow: 1;
   height: 100vh;
   overflow: hidden;
-  margin-left: 15%;
+  margin-left: 14%;
+  position: relative;
   /* margin-left: 200px; */
   .iframe {
     width: 125%;
@@ -84,12 +111,38 @@ const PageBox = styled.div`
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
   }
+	.mobile-box-wrap {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		/* background: rgba(255,255,255,0.9); */
+		background: rgba(0, 0, 0, 0.6);
+		.mobile-box {
+		width: 375px;
+		height: 95%;
+		margin: 2.5% auto;
+		box-shadow: 4px 0px 4px hsla(0, 0%, 0%, 0.1);
+		border-radius: 30px;
+
+  		}
+		.iframe-mb {
+			width: 100%;
+			height: 100%;
+			border-radius: 30px;
+
+		}
+	}
+
+
+
 `;
 // comment
 const ComtWrap = styled.div`
   /* width: 410px; */
   width: 22%;
   height: 100vh;
+  position: relative;
 
   /* background-color: lightcoral; */
   .cont {
@@ -100,6 +153,27 @@ const ComtWrap = styled.div`
     background: url(${(props) => props.bgImg});
     background-size: cover;
   }
+  .mb-btn-box {
+	position: absolute;
+	bottom: 37px;
+	left: 12%;
+	background: ${theme.colors.txtdefault};
+    color: ${theme.colors.orange};
+	font-size: 20px;
+	padding: 10px 20px;
+	border-radius: 30px;
+	cursor: pointer;
+  }
+  .mb-icon {
+	
+	width: 51px;
+	height: 51px;
+	padding: 13px;
+    border-radius: 50px;
+    background: ${theme.colors.txtdefault};
+    color: ${theme.colors.orange};
+  }
+  
   /* 폰트 */
   h2 {
     font-size: 27px;
