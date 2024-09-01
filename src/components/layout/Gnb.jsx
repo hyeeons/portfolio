@@ -77,8 +77,8 @@ const Gnb = () => {
   return (
     <GnbWrap>
       <div className="gnbcontainer">
-        <div className="header">
-          <Link to="/">
+        <div className="gnb">
+          <Link to="/react_portfolio">
             <h1 style={{ color: `rgb(${SelectColor()})` }}>PROJECTS</h1>
           </Link>
         </div>
@@ -121,7 +121,7 @@ const GnbWrap = styled.div`
   .gnbcontainer {
     padding-top: 84px;
   }
-  .header {
+  .gnb {
     width: 237px;
     height: 92px;
     margin: 0 auto;

@@ -24,11 +24,11 @@ const AboutMe = () => {
     { skill: "react", img: react },
     { skill: "github", img: github },
     { skill: "figma", img: figma },
-    { skill: "photoshop", img: photoshop },
-    { skill: "illust", img: illust },
-    { skill: "typescript", img: ts },
     { skill: "blender", img: blender },
     { skill: "unity", img: unity },
+    // { skill: "photoshop", img: photoshop },
+    // { skill: "illust", img: illust },
+    // { skill: "typescript", img: ts },
     // { skill: "tailwind", img: tailwind },
   ];
   return (

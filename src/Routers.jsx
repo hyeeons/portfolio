@@ -9,11 +9,10 @@ import Layout, { PfLayout } from "./components/layout/Layout";
 import Home from "./views/home/Home";
 import AboutMe from "./views/aboutMe/AboutMe";
 import Thankyou from "./views/thankyou/Thankyou";
+import Portfolio from "./views/p_portfolio/Portfolio";
 import Vita500 from "./views/vita500/Vita500";
-import SamsungHospital from "./views/samsungHospital/SamsungHospital";
-import Dashboard from "./views/dashboard/Dashboard";
-import JsDiary from "./views/jsDiary/JsDiary";
-import Portfolio from "./views/portfolio/Portfolio";
+import Dashboard from "./views/p_dashboard/Dashboard";
+import SamsungHospital from "./views/p_samsungHospital/SamsungHospital";
 
 const Routers = () => {
   return (
@@ -31,7 +30,8 @@ const Routers = () => {
             <Route path="/vita500" element={<Vita500 />} />
             <Route path="/samsunghospital" element={<SamsungHospital />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/jsdiary" element={<JsDiary />} />
+            <Route path="/dongsuhfoods" element={<Dashboard />} />
+            {/* <Route path="/jsdiary" element={<JsDiary />} /> */}
           </Route>
         </Routes>
       </Router>

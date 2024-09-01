@@ -21,7 +21,7 @@ const SitePage = ({
   return (
     <FlexBox>
       <PageBox>
-        <iframe className="frame" src={iframesrc}></iframe>
+        <iframe className="iframe" src={iframesrc}></iframe>
       </PageBox>
       <ComtWrap bgImg={bgImg}>
         <div className="cont">
@@ -67,7 +67,7 @@ const PageBox = styled.div`
   height: 100vh;
   overflow: hidden;
   margin-left: 270px;
-  .frame {
+  .iframe {
     width: 130%;
     height: 125%;
     border: 0;

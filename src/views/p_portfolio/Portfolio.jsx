@@ -1,5 +1,6 @@
 import SitePage from "../../components/layout/SitePage";
 import bgPortfolio from "../../assets/images/projects/bg_portfolio.png";
+
 const Portfolio = () => {
   const skillArr = [
     "React",
