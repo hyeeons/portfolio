@@ -66,9 +66,10 @@ const PageBox = styled.div`
   flex-grow: 1;
   height: 100vh;
   overflow: hidden;
-  margin-left: 270px;
+  margin-left: 15%;
+  /* margin-left: 200px; */
   .iframe {
-    width: 130%;
+    width: 125%;
     height: 125%;
     border: 0;
     -ms-transform: scale(0.8);
@@ -86,7 +87,8 @@ const PageBox = styled.div`
 `;
 // comment
 const ComtWrap = styled.div`
-  width: 410px;
+  /* width: 410px; */
+  width: 22%;
   height: 100vh;
 
   /* background-color: lightcoral; */

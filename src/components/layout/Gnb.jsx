@@ -13,6 +13,11 @@ const Gnb = () => {
 
   const MenuArr = [
     {
+      path: "/dongsuhfoods",
+      text: "동서식품 리뉴얼",
+      color: "dongshufoods",
+    },
+    {
       path: "/react_portfolio",
       text: "포트폴리오 사이트",
       color: "portfolio",
@@ -78,7 +83,7 @@ const Gnb = () => {
     <GnbWrap>
       <div className="gnbcontainer">
         <div className="gnb">
-          <Link to="/react_portfolio">
+          <Link to="/dongsuhfoods">
             <h1 style={{ color: `rgb(${SelectColor()})` }}>PROJECTS</h1>
           </Link>
         </div>
@@ -111,7 +116,8 @@ const Gnb = () => {
 
 const GnbWrap = styled.div`
   background-color: ${theme.colors.grayF9};
-  width: 270px;
+  /* width: 270px; */
+  width: 15%;
   height: 100vh;
   box-shadow: 4px 0px 4px hsla(0, 0%, 0%, 0.1);
   position: absolute;
@@ -138,6 +144,7 @@ const GnbWrap = styled.div`
   .menuWrap {
     /* background: lightblue; */
     width: 240px;
+	/* width: 15%; */
     margin: 18px auto 0;
     padding: 0 10px;
   }

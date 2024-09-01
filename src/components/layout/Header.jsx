@@ -29,7 +29,7 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to="/react_portfolio">
+          <Link to="/dongsuhfoods">
             <FaList className="icon" />
             <span>Project</span>
           </Link>

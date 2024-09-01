@@ -10,9 +10,10 @@ import Home from "./views/home/Home";
 import AboutMe from "./views/aboutMe/AboutMe";
 import Thankyou from "./views/thankyou/Thankyou";
 import Portfolio from "./views/p_portfolio/Portfolio";
-import Vita500 from "./views/vita500/Vita500";
+import Vita500 from "./views/p_vita500/Vita500";
 import Dashboard from "./views/p_dashboard/Dashboard";
 import SamsungHospital from "./views/p_samsungHospital/SamsungHospital";
+import DongshuFoods from "./views/p_dongshufoods/DongshuFoods";
 
 const Routers = () => {
   return (
@@ -30,7 +31,7 @@ const Routers = () => {
             <Route path="/vita500" element={<Vita500 />} />
             <Route path="/samsunghospital" element={<SamsungHospital />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/dongsuhfoods" element={<Dashboard />} />
+            <Route path="/dongsuhfoods" element={<DongshuFoods />} />
             {/* <Route path="/jsdiary" element={<JsDiary />} /> */}
           </Route>
         </Routes>
