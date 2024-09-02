@@ -3,13 +3,33 @@ import bgPortfolio from "../../assets/images/projects/bg_portfolio.png";
 
 const Portfolio = () => {
   const skillArr = [
-    "React",
-    "Styled-components",
-    "Router",
-    "Javascript",
-    "useEffect",
-    "useState",
-    "Gsap",
+	{
+		alt:"React",
+		src: "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+	},
+
+	{
+		alt:"Router",
+		src: "https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white"
+	},
+	{
+		alt:"HTML5",
+		src: "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+	},
+	{
+		alt:"CSS3",
+		src: "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+	},
+	{
+		alt:"Javascript",
+		src: "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"
+	},
+
+	{
+		alt:"styled components",
+		src: "https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=whit"
+	},
+
   ];
   return (
     <>

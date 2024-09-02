@@ -199,13 +199,13 @@ const ComtWrap = styled.div`
     font-size: 27px;
     font-weight: 700;
     padding: 20px 0px;
-    border-bottom: 1px solid black;
-    white-space: nowrap;
+	border-bottom: 1px solid ${theme.colors.gnbLine};
+	white-space: nowrap;
     letter-spacing: -1px;
   }
   h3 {
-    font-size: 17px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 600;
     margin-top: 8px;
   }
   h4 {

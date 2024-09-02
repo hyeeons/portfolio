@@ -45,7 +45,7 @@ const AboutMe = () => {
           </div>
           <div className="textBox">
             <h3>Better Than Yesterday</h3>
-            <h4>어제보다 오늘, 오늘보다 내일 더 성장하는 퍼블리셔입니다 </h4>
+            <h4>어제보다 오늘, 오늘보다 내일 더 성장하는 웹퍼블리셔입니다 </h4>
             <p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates animi impedit quia, ad culpa nobis voluptatem esse autem optio dolores laboriosam inventore hic, explicabo quam, totam harum! Reiciendis, illum doloremque?
             </p>
