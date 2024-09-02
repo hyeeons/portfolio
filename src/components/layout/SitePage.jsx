@@ -24,30 +24,36 @@ const SitePage = ({
   figma,
 }) => {
 
-	// 모바일 보여주기
-	const [showMobileBox, setShowMobileBox] = useState(false);
+	// 모바일 활성
+	const [isMobileActive, setIsMobileActive] = useState(false);
 
-	const toggleMobileBox = ()=> {
-		setShowMobileBox(!showMobileBox);
+	const mobileActive = ()=> {
+		setIsMobileActive(!isMobileActive);
 	};
+
+	// 모바일 클릭 시 pc버전 블러처리
+	const [isBlurred, setIsBlurred] = useState(false);
+
+	const toggleBlur = ()=> {
+		setIsBlurred(!isBlurred);
+	}
 
   return (
     <FlexBox>
       <PageBox>
-        <iframe className="iframe" src={iframesrc}></iframe>
-		{showMobileBox && (
-			<div className="mobile-box-wrap">
-			<div className="mobile-box"><iframe className="iframe-mb" src={iframesrc} ></iframe>
+        <iframe className={`iframe ${isBlurred ? "iframe-blurred" : ""}`} src={iframesrc}></iframe>
+		<div className={`mobile-box-wrap ${isMobileActive ? "mobile-active" : ""}`} onClick={toggleBlur}>
+			<div className="mobile-box" ><iframe className="iframe-mb" src={iframesrc} ></iframe>
 			</div>
 			</div>
-		)};
-		
-		
       </PageBox>
       <ComtWrap bgImg={bgImg}>
-		<div className="mb-btn-box" onClick={toggleMobileBox}>
+		<div className="mb-btn-box" onClick={()=> {
+			mobileActive();
+			toggleBlur();
+		}}
+		>
 			모바일 보기 
-			{/* <FaMobileAlt className="mb-icon"/> */}
 			
 		</div>
         <div className="cont">
@@ -111,31 +117,45 @@ const PageBox = styled.div`
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
   }
+  .iframe-blurred {
+	filter:blur(5px);
+	transition: all 0.5s ease;
+  }
 	.mobile-box-wrap {
 		position: absolute;
 		top: 0;
+		left: 0;
 		width: 100%;
 		height: 100%;
-		/* background: rgba(255,255,255,0.9); */
-		background: rgba(0, 0, 0, 0.6);
+		transition: all 0.3s ease;
+		/* background: rgba(0, 0, 0, 0.7); */
+
 		.mobile-box {
+		position: absolute;
+		top: 50%;
+		right: -100%;
+		transform: translateY(-50%);
 		width: 375px;
-		height: 95%;
-		margin: 2.5% auto;
+		height: 75%;
+		transition: all 0.3s ease;
 		box-shadow: 4px 0px 4px hsla(0, 0%, 0%, 0.1);
-		border-radius: 30px;
+		border-radius: 20px;
 
   		}
+		
+	}
+	.mobile-active {
+		background: rgba(255,255,255,0.9);
+
+		.mobile-box {
+			right: 0;
+		}
+	}
 		.iframe-mb {
 			width: 100%;
 			height: 100%;
-			border-radius: 30px;
-
+			border-radius: 20px;
 		}
-	}
-
-
-
 `;
 // comment
 const ComtWrap = styled.div`
