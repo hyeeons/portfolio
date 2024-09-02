@@ -128,6 +128,7 @@ const PageBox = styled.div`
 		width: 100%;
 		height: 100%;
 		transition: all 0.3s ease;
+		visibility: hidden;
 		/* background: rgba(0, 0, 0, 0.7); */
 
 		.mobile-box {
@@ -145,6 +146,8 @@ const PageBox = styled.div`
 		
 	}
 	.mobile-active {
+		visibility: visible;
+		/* display: block; */
 		background: rgba(255,255,255,0.9);
 
 		.mobile-box {
