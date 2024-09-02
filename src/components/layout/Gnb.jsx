@@ -33,11 +33,11 @@ const Gnb = () => {
       color: "blueSamsung",
     },
 
-    {
-      path: "/dashboard",
-      text: "Dashboard",
-      color: "dashboard",
-    },
+    // {
+    //   path: "/dashboard",
+    //   text: "Dashboard",
+    //   color: "dashboard",
+    // },
     // {
     //   path: "/jsdiary",
     //   //   icon: <PiDesktop />,
