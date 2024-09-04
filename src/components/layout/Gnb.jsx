@@ -158,7 +158,7 @@ const GnbWrap = styled.div`
     cursor: pointer;
 
     .menu {
-      font-size: 18px;
+      font-size: 19px;
     }
     .menu-icon {
       padding-right: 7px;
