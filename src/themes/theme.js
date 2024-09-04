@@ -11,7 +11,8 @@ export const theme = {
     grayF9: "#F9F9F9",
     grayEc: "#ececec",
     grayDefault: "#9CA7BA",
-    gnbLine: "#9a9a9a",
+    gnbLine: "#d4d4d4",
+	
     // gnbLine: "#827362",
     black: "#000",
     white: "#fff",

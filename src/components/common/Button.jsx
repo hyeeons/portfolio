@@ -30,17 +30,19 @@ const GotoBtn = styled.div`
   a {
     display: block;
     width: 98px;
-    padding: 4px;
+    padding: 5px;
     font-size: 17px;
     text-decoration: none;
     text-align: center;
-    border: 2px solid ${theme.colors.grayLine};
-    box-shadow: 1px 1px ${theme.colors.grayLine};
-    border-radius: 4px;
+	background-color: ${theme.colors.grayEc};
+    /* border: 1px solid ${theme.colors.gray}; */
+    box-shadow: 2px 2px ${theme.colors.gnbLine};
+    border-radius: 20px;
     color: ${theme.colors.txtdefault};
     &:hover {
       background-color: ${theme.colors.txtdefault};
       color: ${theme.colors.white};
+	  box-shadow: none;
     }
   }
 `;

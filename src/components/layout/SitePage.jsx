@@ -169,7 +169,8 @@ const ComtWrap = styled.div`
 
   /* background-color: lightcoral; */
   .cont {
-    width: 310px;
+	width: 75%;
+    /* width: 310px; */
     /* height: 47.6875rem; */
     /* background-color: lightblue; */
     margin: 25% auto;
@@ -201,7 +202,7 @@ const ComtWrap = styled.div`
   h2 {
     font-size: 27px;
     font-weight: 700;
-    padding: 20px 0px;
+	padding-bottom: 17px;
 	border-bottom: 1px solid ${theme.colors.gnbLine};
 	white-space: nowrap;
     letter-spacing: -1px;
@@ -226,12 +227,15 @@ const ComtWrap = styled.div`
   }
   .skillBox {
     margin-top: 16px;
+	img {
+		border-radius: 50px;
+	}
   }
   .buttonBox {
-    margin-top: 44px;
+    margin-top: 26px;
   }
   .text3 {
-    margin-top: 12px;
+    margin-top: 20px;
     p {
       font-size: 16px;
       line-height: 1.5;

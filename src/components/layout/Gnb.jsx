@@ -128,11 +128,11 @@ const GnbWrap = styled.div`
     padding-top: 84px;
   }
   .gnb {
-	width: 100%;
+	width: 80%;
     /* width: 237px; */
     height: 92px;
     margin: 0 auto;
-    border-bottom: 1px solid ${theme.colors.gnbLine};
+    border-bottom: 2px solid ${theme.colors.gnbLine};
   }
   h1 {
     font-size: 30px;
