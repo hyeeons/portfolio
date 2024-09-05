@@ -47,7 +47,7 @@ const AboutMe = () => {
             <h3>Better Than Yesterday</h3>
             <h4>어제보다 오늘, 오늘보다 내일 더 성장하는 웹퍼블리셔입니다 </h4>
             <p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates animi impedit quia, ad culpa nobis voluptatem esse autem optio dolores laboriosam inventore hic, explicabo quam, totam harum! Reiciendis, illum doloremque?
+				안녕하세요. 끊임없이 성장하는 웹퍼블리셔 이현정입니다. 과거 건강기능식품 회사에서 약 5년간 학술/개발 업무를 진행하였습니다. 이러한 경험에서 쌓은 문제해결능력을 바탕으로 이제는 더욱 더 성장하기 위해 웹퍼블리셔를 지원하게 되었습니다. 코드를 활용하여 무언가를 만들어 낼 때 매우 큰 즐거움을 느낍니다. 항상 사용자를 중심으로 생각하고 사용자의 경험을 최우선으로 하는 웹퍼블리셔가 되고자 합니다. 새로운 것을 배우는 데 주저하지 않으며 성실하고 책임감있게 프로젝트를 수행할 수 있습니다.
             </p>
           </div>
           <div className="skills">
