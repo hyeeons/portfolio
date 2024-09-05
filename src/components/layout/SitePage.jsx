@@ -239,7 +239,7 @@ const ComtWrap = styled.div`
 	}
   }
   .buttonBox {
-    margin-top: 26px;
+    margin-top: 17px;
 	max-width: 100%;
   }
   .text3 {
