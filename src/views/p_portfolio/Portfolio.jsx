@@ -1,5 +1,7 @@
 import SitePage from "../../components/layout/SitePage";
 import bgPortfolio from "../../assets/images/projects/bg_portfolio.png";
+import styled from "styled-components";
+
 
 const Portfolio = () => {
   const skillArr = [
@@ -47,9 +49,12 @@ const Portfolio = () => {
         projectComment="사용자의 입장에서 좋은 포트폴리오란 무엇일까 생각했습니다. 포트폴리오는 여러가지 프로젝트를 소개하는 특성을 가지고 있습니다. 이러한 점을 고려하여 직관적이고 프로젝트의 관리가 편리한 사이트를 기획했습니다. 이를 위해 iframe을 활용하여 사이트 내에서 여러가지 프로젝트들을 한 눈에 볼 수 있도록 제작하였으며, React Router를 활용하여 페이지 이동을 편리하게 하였습니다. 또한, useState와 useEffect와 같은 Hook을 사용하여 프로젝트마다 메뉴 색상 등을 변경함으로써 프로젝트 분위기에 어울리는 동적인 페이지를 구현했습니다.	"
 		
         bgImg={bgPortfolio}
+		hideMobileButton={true}
       />
     </>
   );
 };
+
+
 
 export default Portfolio;

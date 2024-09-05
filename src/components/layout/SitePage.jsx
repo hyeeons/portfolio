@@ -22,6 +22,7 @@ const SitePage = ({
   bgImg,
   display,
   figma,
+  hideMobileButton,
 }) => {
 
 	// 모바일 활성
@@ -48,14 +49,16 @@ const SitePage = ({
 			</div>
       </PageBox>
       <ComtWrap bgImg={bgImg}>
-		<div className="mb-btn-box" onClick={()=> {
+		{!hideMobileButton && (
+			<div className="mb-btn-box" onClick={()=> {
 			mobileActive();
 			toggleBlur();
 		}}
 		>
 			모바일 보기 
-			
 		</div>
+		)}
+		
         <div className="cont">
           <h2>{title}</h2>
           <div className="text1">
