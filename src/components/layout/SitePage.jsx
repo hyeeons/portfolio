@@ -169,7 +169,7 @@ const ComtWrap = styled.div`
 
   /* background-color: lightcoral; */
   .cont {
-	width: 75%;
+	width: 78%;
     /* width: 310px; */
     /* height: 47.6875rem; */
     /* background-color: lightblue; */
@@ -200,6 +200,7 @@ const ComtWrap = styled.div`
   
   /* 폰트 */
   h2 {
+	/* font-size: 1.7vw; */
     font-size: 27px;
     font-weight: 700;
 	padding-bottom: 17px;
@@ -216,6 +217,7 @@ const ComtWrap = styled.div`
     font-size: 15px;
     font-weight: 500;
     margin-top: 5px;
+	line-height: 1.4;
   }
 
   /* 텍스트 박스 */
@@ -229,10 +231,13 @@ const ComtWrap = styled.div`
     margin-top: 16px;
 	img {
 		border-radius: 50px;
+		display: block;
+		padding: 3px 0;
 	}
   }
   .buttonBox {
     margin-top: 26px;
+	max-width: 100%;
   }
   .text3 {
     margin-top: 20px;

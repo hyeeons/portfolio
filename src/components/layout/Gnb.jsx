@@ -83,7 +83,7 @@ const Gnb = () => {
     <GnbWrap>
       <div className="gnbcontainer">
         <div className="gnb">
-          <Link to="/dongsuhfoods">
+          <Link to="/dongsuhfoods" className="gnb-tit">
             <h1 style={{ color: `rgb(${SelectColor()})` }}>PROJECTS</h1>
           </Link>
         </div>
@@ -117,7 +117,7 @@ const Gnb = () => {
 const GnbWrap = styled.div`
   background-color: ${theme.colors.grayF9};
   /* width: 270px; */
-  width: 14.5%;
+  width: 14%;
   height: 100vh;
   box-shadow: 4px 0px 4px hsla(0, 0%, 0%, 0.1);
   position: absolute;
@@ -125,44 +125,61 @@ const GnbWrap = styled.div`
   left: 0;
   z-index: 100;
   .gnbcontainer {
-    padding-top: 84px;
+	padding: 37%  0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* padding-top: 135px; */
+    /* padding-top: 84px; */
   }
   .gnb {
 	width: 80%;
     /* width: 237px; */
-    height: 92px;
+    /* height: 92px; */
     margin: 0 auto;
     border-bottom: 2px solid ${theme.colors.gnbLine};
   }
   h1 {
+	/* font-size: 1.6vw; */
     font-size: 30px;
     font-weight: 700;
     text-align: center;
-    padding: 30px 0;
+    /* padding: 30px 0; */
     /* ${theme.colors.gnbLine} */
     /* color: ${theme.colors.orangeVita}; */
   }
   .menuWrap {
     /* background: lightblue; */
-    width: 240px;
+    /* width: 240px; */
 	/* width: 15%; */
     margin: 18px auto 0;
-    padding: 0 10px;
+	/* padding-left: 20px; */
+    
   }
 
   .menu-box {
-    height: 40px;
-    padding: 0 20px;
+    /* height: 40px; */
+    /* padding: 0 20px; */
     display: flex;
     align-items: flex-end;
     cursor: pointer;
 
     .menu {
+		/* font-size: 1vw; */
       font-size: 19px;
     }
     .menu-icon {
       padding-right: 7px;
     }
+  }
+  .link {
+	display: block;
+	padding: 7px 0;
+  }
+  .gnb-tit {
+	display: block;
+	padding: 12% 0;
+	/* padding-bottom: 5%; */
   }
 `;
 
