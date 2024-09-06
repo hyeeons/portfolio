@@ -55,7 +55,7 @@ const SitePage = ({
 			toggleBlur();
 		}}
 		>
-			모바일 보기 
+			{isMobileActive ? "모바일 닫기" : "모바일 보기"} 
 		</div>
 		)}
 		
@@ -182,14 +182,15 @@ const ComtWrap = styled.div`
   }
   .mb-btn-box {
 	position: absolute;
-	bottom: 37px;
-	left: 12%;
+	bottom: 31px;
+	left: 11%;
 	background: ${theme.colors.txtdefault};
     color: ${theme.colors.orange};
 	font-size: 20px;
 	padding: 10px 20px;
 	border-radius: 30px;
 	cursor: pointer;
+	box-shadow: 4px 0px 4px hsla(0, 0%, 0%, 0.1);
   }
   .mb-icon {
 	
