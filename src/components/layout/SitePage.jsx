@@ -100,7 +100,7 @@ const PageBox = styled.div`
   /* width: 90%; */
   flex-grow: 1;
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
   margin-left: 14%;
   position: relative;
   /* margin-left: 200px; */
