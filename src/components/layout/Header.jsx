@@ -6,6 +6,9 @@ import { LuMousePointerClick } from "react-icons/lu";
 import { RiSurveyFill } from "react-icons/ri";
 import { FaList } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
+// import { IoMdContact } from "react-icons/io";
+import { IoMailSharp } from "react-icons/io5";
+
 
 // import { FaMousePointer } from "react-icons/fa";
 
@@ -32,6 +35,12 @@ const Header = () => {
           <Link to="/dongsuhfoods">
             <FaList className="icon" />
             <span>Project</span>
+          </Link>
+        </li>
+		<li>
+          <Link to="/contact">
+            <IoMailSharp className="icon" />
+            <span>Contact</span>
           </Link>
         </li>
         <li>
