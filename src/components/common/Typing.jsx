@@ -17,7 +17,7 @@ const Typing = ({ text, isTyping }) => {
     }
   }, [text, count, isTyping]);
 
-  return <TextSt>{typedText}</TextSt>;
+  return <TextSt className="typing-text">{typedText}</TextSt>;
 };
 
 const TextSt = styled.p`
