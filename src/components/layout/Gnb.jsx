@@ -197,7 +197,7 @@ const GnbWrap = styled.div`
   .goto-btn {
 	position: absolute;
     bottom: 3%;
-    left: 10%;
+    left: 15%;
     z-index: 30;
 	display: flex;
 	gap: 10px;
@@ -205,12 +205,20 @@ const GnbWrap = styled.div`
   .icon {
 
     font-size: 51px;
-    width: 51px;
-    height: 51px;
+    width: 49px;
+    height: 49px;
     padding: 13px;
     border-radius: 50px;
+	
+	background: ${theme.colors.orange};
+	color: ${theme.colors.txtdefault};
+	opacity: 0.7;
+
+	&:hover {
     background: ${theme.colors.txtdefault};
     color: ${theme.colors.orange};
+	opacity: 1;
+}
 
   }
 `;
