@@ -6,6 +6,10 @@ import { PiDesktopFill } from "react-icons/pi";
 import { RiPagesFill } from "react-icons/ri";
 import { FaPager } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { IoHome } from "react-icons/io5";
+import { FaUser } from "react-icons/fa6";
+
+
 
 const Gnb = () => {
   const [isSelected, setIsSelected] = useState(0);
@@ -109,7 +113,16 @@ const Gnb = () => {
             </div>
           ))}
         </div>
+		<div className="goto-btn">
+			<Link to="/">
+				<IoHome className="icon" />
+			</Link>
+			<Link to="/aboutme">
+            <FaUser className="icon" />
+          </Link>
+		</div>
       </div>
+	
     </GnbWrap>
   );
 };
@@ -180,6 +193,25 @@ const GnbWrap = styled.div`
 	display: block;
 	padding: 12% 0;
 	/* padding-bottom: 5%; */
+  }
+  .goto-btn {
+	position: absolute;
+    bottom: 3%;
+    left: 10%;
+    z-index: 30;
+	display: flex;
+	gap: 10px;
+  }
+  .icon {
+
+    font-size: 51px;
+    width: 51px;
+    height: 51px;
+    padding: 13px;
+    border-radius: 50px;
+    background: ${theme.colors.txtdefault};
+    color: ${theme.colors.orange};
+
   }
 `;
 
