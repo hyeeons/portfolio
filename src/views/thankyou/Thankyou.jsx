@@ -35,11 +35,13 @@ const Thankyou = () => {
 				<div className="text-box">
 					<div className="comment-box">
 						<p>
-							사용자를 중심으로 하며 <br /> 꾸준히 발전하는 웹퍼블리셔입니다
+							사용자 경험을 중요하게 생각하며 <br />
+							어제보다 오늘 더 성장하는 
+							웹퍼블리셔입니다.
 						</p>
 					</div>					
 					<div className="email-box"><span >E-mail</span>
-					<p>mouom11@naver.com</p></div>
+					<p className="email-txt">mouom11@naver.com</p></div>
 					<div className="github-box"><span >Github</span>
 					<a href="https://github.com/hyeeons">https://github.com/hyeeons</a>
 					</div>
@@ -61,7 +63,8 @@ const Wrap = styled.div`
 	.typing-text {
 		font-size: 90px;
 		font-weight: 800;
-		padding: 125px 0 45px;
+		padding: 6% 0 0 ;
+		/* padding: 125px 0 45px; */
 		/* display: block;
 		font-size: 90px;
 		font-weight: 800;
@@ -74,7 +77,7 @@ const Wrap = styled.div`
 .contact-box {
 	width: 50%;
 	background-color: white;
-	margin: 0 auto;
+	margin: 17px auto 0;
 	border-radius: 10px;
 	position: relative;
 	padding: 60px 0 70px;	
@@ -89,7 +92,7 @@ const Wrap = styled.div`
 .contact-text {
 	display: flex;
 	justify-content: space-between;
-	
+	align-items: center;
 	/* flex-direction: column; */
 	/* padding-left: 50px; */
 	/* gap: 17px; */
@@ -110,7 +113,7 @@ const Wrap = styled.div`
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	gap: 17px;
+	gap: 15px;
 	span {
 		font-size: 20px;
 		font-weight: 600;
@@ -118,20 +121,37 @@ const Wrap = styled.div`
 		padding-bottom: 4px;
 		
 	}
-	p{
+	.email-txt{
 		font-size: 17px;
 		padding: 10px 0;
+		color: ${theme.colors.txtdefault};
+		opacity: 0.7;
+		cursor: pointer;
+		&:hover {
+			opacity: 1;
+			text-decoration: underline;
+		}
 	}
 	a {
 		display: block;
 		font-size: 17px;
 		padding: 10px 0;
+		color: ${theme.colors.txtdefault};
+		opacity: 0.7;
+		cursor: pointer;
+		&:hover {
+			opacity: 1;
+			text-decoration: underline;
+		}
 	}
 	.comment-box {
 		p {
 			font-size: 18px;
-			font-weight: 500;
+			font-weight: 400;
 			line-height: 1.5;
+			color: ${theme.colors.txtdefault};
+			opacity: 1;
+			margin-bottom: 10px;
 		}
 	}
 }
