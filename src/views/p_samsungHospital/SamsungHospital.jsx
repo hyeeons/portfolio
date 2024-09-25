@@ -25,7 +25,7 @@ const SamsungHospital = () => {
 
   return (
     <SitePage
-      iframesrc="https://hyeeons.github.io/SamsungHospital_re/healthCare.html#"
+      iframesrc="https://hyeeons.github.io/SamsungHospital_re/healthCare.html"
       skill={skillArr}
       title="삼성서울병원 리뉴얼 사이트"
       subtitle="삼성서울병원 사이트 리뉴얼 기획 및 제작"
