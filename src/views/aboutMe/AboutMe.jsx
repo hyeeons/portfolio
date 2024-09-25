@@ -26,10 +26,10 @@ const AboutMe = () => {
     { skill: "figma", img: figma },
     { skill: "blender", img: blender },
     { skill: "unity", img: unity },
-    { skill: "photoshop", img: photoshop },
-    { skill: "illust", img: illust },
-    // { skill: "typescript", img: ts },
-    // { skill: "tailwind", img: tailwind },
+    // { skill: "photoshop", img: photoshop },
+    // { skill: "illust", img: illust },
+    { skill: "typescript", img: ts },
+    { skill: "tailwind", img: tailwind },
   ];
   return (
     <Wrap className="wrap">
