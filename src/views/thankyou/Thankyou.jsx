@@ -37,7 +37,7 @@ const Thankyou = () => {
 						<p>
 							사용자 경험을 중요하게 생각하며 <br />
 							어제보다 오늘 더 성장하는 
-							웹퍼블리셔입니다.
+							프론트엔드 개발자입니다.
 						</p>
 					</div>					
 					<div className="email-box"><span >E-mail</span>
