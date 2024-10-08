@@ -25,7 +25,7 @@ const TextSt = styled.p`
   line-height: 1.4;
   font-weight: 600;
   text-align: center;
-  padding: 20% 10% 3%;
+  padding: 15% 10% 3%;
   letter-spacing: 0.5px;
   white-space: pre-line;
 `;

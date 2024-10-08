@@ -124,6 +124,7 @@ const Gnb = () => {
       </div>
 	
     </GnbWrap>
+	
   );
 };
 
