@@ -5,6 +5,8 @@ import { FaMobileAlt } from "react-icons/fa";
 import theme from "../../themes/theme";
 import { useState } from "react";
 
+import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 const SitePage = ({
@@ -58,7 +60,14 @@ const SitePage = ({
 			{isMobileActive ? "모바일 닫기" : "모바일 보기"} 
 		</div>
 		)}
-		
+		<div className="button">
+			<HdButton className="hdButton">
+				<Link to="/contact" className="link">
+				CONTACT
+					<FaArrowRight className="icon" />
+				</Link>
+			</HdButton>
+  		</div>
         <div className="cont">
           <h2>{title}</h2>
           <div className="text1">
@@ -101,7 +110,7 @@ const PageBox = styled.div`
   flex-grow: 1;
   height: 100vh;
   overflow: hidden;
-  margin-left: 14%;
+  margin-left: 13%;
   position: relative;
   /* margin-left: 200px; */
   .iframe {
@@ -166,28 +175,31 @@ const PageBox = styled.div`
 // comment
 const ComtWrap = styled.div`
   /* width: 410px; */
-  width: 22%;
+  width: 21%;
+  /* width: 25em; */
   height: 100vh;
   position: relative;
+  padding: 0 30px;
 
   /* background-color: lightcoral; */
   .cont {
-	width: 78%;
+
     /* width: 310px; */
     /* height: 47.6875rem; */
     /* background-color: lightblue; */
-    margin: 25% auto;
+	margin-top: 24%;
     background: url(${(props) => props.bgImg});
     background-size: cover;
   }
   .mb-btn-box {
 	position: absolute;
-	bottom: 31px;
+	bottom: 2%;
 	left: 11%;
 	background: ${theme.colors.txtdefault};
     color: ${theme.colors.orange};
-	font-size: 20px;
-	padding: 10px 20px;
+	/* font-size: 20px; */
+	font-size: 1.25em;
+	padding: 10px 18px;
 	border-radius: 30px;
 	cursor: pointer;
 	box-shadow: 4px 0px 4px hsla(0, 0%, 0%, 0.1);
@@ -205,7 +217,8 @@ const ComtWrap = styled.div`
   /* 폰트 */
   h2 {
 	/* font-size: 1.7vw; */
-    font-size: 27px;
+    /* font-size: 27px; */
+	font-size: 1.9em;
     font-weight: 700;
 	padding-bottom: 17px;
 	border-bottom: 1px solid ${theme.colors.gnbLine};
@@ -213,12 +226,14 @@ const ComtWrap = styled.div`
     letter-spacing: -1px;
   }
   h3 {
-    font-size: 18px;
+    /* font-size: 18px; */
+	font-size: 1.15em;
     font-weight: 600;
     margin-top: 8px;
   }
   h4 {
-    font-size: 15px;
+    /* font-size: 15px; */
+	font-size: 0.95em;
     font-weight: 500;
     margin-top: 5px;
 	line-height: 1.4;
@@ -236,7 +251,7 @@ const ComtWrap = styled.div`
 	img {
 		border-radius: 50px;
 		display: block;
-		padding: 3px 0;
+		padding: 1px 0;
 	}
   }
   .buttonBox {
@@ -246,10 +261,34 @@ const ComtWrap = styled.div`
   .text3 {
     margin-top: 20px;
     p {
-      font-size: 16px;
+      font-size: 1em;
       line-height: 1.5;
+	  height: 40vh;
+	  overflow: scroll;
     }
   }
 `;
+
+const HdButton = styled.div`
+	position: absolute;
+	bottom: 2%;
+	z-index: 1000;
+	right: 8%;
+	.link {
+		display: flex;
+		/* font-size: 20px; */
+		font-size: 1.25em;
+		background: ${theme.colors.orange};
+		color: ${theme.colors.txtdefault};
+		padding: 10px 18px;
+		border-radius: 50px;
+		box-shadow: 4px 0px 4px hsla(0, 0%, 0%, 0.1);
+
+	}
+	.icon {
+		font-size: 27px;
+	}
+
+`
 
 export default SitePage;

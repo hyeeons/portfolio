@@ -8,6 +8,7 @@ import { FaPager } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { IoHome } from "react-icons/io5";
 import { FaUser } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
 
 
 
@@ -84,6 +85,7 @@ const Gnb = () => {
   }, [location.pathname]);
 
   return (
+	<>
     <GnbWrap>
       <div className="gnbcontainer">
         <div className="gnb">
@@ -122,23 +124,26 @@ const Gnb = () => {
           </Link>
 		</div>
       </div>
-	
+	  
     </GnbWrap>
+	
+	  </>
   );
 };
 
 const GnbWrap = styled.div`
   background-color: ${theme.colors.grayF9};
   /* width: 270px; */
-  width: 14%;
+  /* width: 14%; */
   height: 100vh;
+  padding: 0 2.4% 0;
   box-shadow: 4px 0px 4px hsla(0, 0%, 0%, 0.1);
   position: absolute;
   top: 0%;
   left: 0;
   z-index: 100;
   .gnbcontainer {
-	padding: 37%  0;
+	padding-top: 95px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -146,7 +151,7 @@ const GnbWrap = styled.div`
     /* padding-top: 84px; */
   }
   .gnb {
-	width: 80%;
+	width: 100%;
     /* width: 237px; */
     /* height: 92px; */
     margin: 0 auto;
@@ -165,6 +170,7 @@ const GnbWrap = styled.div`
     /* background: lightblue; */
     /* width: 240px; */
 	/* width: 15%; */
+	width: 100%;
     margin: 18px auto 0;
 	/* padding-left: 20px; */
     
@@ -179,7 +185,7 @@ const GnbWrap = styled.div`
 
     .menu {
 		/* font-size: 1vw; */
-      font-size: 19px;
+      font-size: 1.1em;
     }
     .menu-icon {
       padding-right: 7px;
@@ -222,5 +228,7 @@ const GnbWrap = styled.div`
 
   }
 `;
+
+
 
 export default Gnb;
