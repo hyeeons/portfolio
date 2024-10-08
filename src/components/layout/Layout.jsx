@@ -37,7 +37,20 @@ export const PfLayout = () => {
     <>
       <PfLayoutSt>
         <Gnb />
-        
+        <div className="button">
+          <HdButton className="hdButton">
+			<Link to="/contact" className="link">
+			CONTACT
+			<FaArrowRight className="icon" />
+			</Link>
+            {/* <Link to="/">
+              <IoHome className="icon" />
+            </Link>
+            <Link to="https://github.com/hyeeons" target="_blank">
+              <FaGithub className="icon" />
+            </Link> */}
+          </HdButton>
+        </div>
       </PfLayoutSt>
       <Outlet />
     </>
