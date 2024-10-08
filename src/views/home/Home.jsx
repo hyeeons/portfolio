@@ -48,7 +48,7 @@ const Home = () => {
         <div className="introBg"></div>
         <Line />
         <H1St className="hello">HELLO</H1St>
-        <H1name className="title">WEB PUBLISHER</H1name>
+        <H1name className="title">Frontend Developer</H1name>
         <H1name className="me">LEE HYUN JEONG</H1name>
       </IntroBox>
       <BoxCon className="boxContain">
@@ -57,7 +57,7 @@ const Home = () => {
         </div>
         <div className="txtBox">
           <Typing
-            text={"안녕하세요\n웹 퍼블리셔\n이현정입니다"}
+            text={"안녕하세요\n프론트엔드\n개발자\n이현정입니다"}
             isTyping={isTyping}
           />
         </div>

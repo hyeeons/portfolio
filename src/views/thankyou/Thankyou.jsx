@@ -25,7 +25,6 @@ const Thankyou = () => {
 		text={"THANK YOU"}
 		isTyping={isTyping}
 	/>
-	
 		<div className="contact-box">
 			<h4 className="contact-tit">Contact Me</h4>
 			<div className="contact-text">			
@@ -35,9 +34,8 @@ const Thankyou = () => {
 				<div className="text-box">
 					<div className="comment-box">
 						<p>
-							사용자 경험을 중요하게 생각하며 <br />
-							어제보다 오늘 더 성장하는 
-							웹 퍼블리셔입니다.
+							새로운 것에 대해 도전적이며 <br />
+							긍정적인 프론트엔드 개발자 이현정입니다.
 						</p>
 					</div>					
 					<div className="email-box"><span >E-mail</span>
@@ -53,17 +51,18 @@ const Thankyou = () => {
 		<div className="bottom-box">
 			<h4>&copy;LeeHyunJeong All Rights Reserved</h4>
 		</div>
-	
   </Wrap>;
+
 };
 
 const Wrap = styled.div`
 	height: 100vh;
+	margin: 6% 0;
 
 	.typing-text {
 		font-size: 90px;
 		font-weight: 800;
-		padding: 6% 0 0 ;
+		padding: 0 ;
 		/* padding: 125px 0 45px; */
 		/* display: block;
 		font-size: 90px;
@@ -75,9 +74,9 @@ const Wrap = styled.div`
 	}
 
 .contact-box {
-	width: 50%;
+	width: 55%;
 	background-color: white;
-	margin: 17px auto 0;
+	margin: 25px auto 0;
 	border-radius: 10px;
 	position: relative;
 	padding: 60px 0 70px;	
