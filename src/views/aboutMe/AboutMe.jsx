@@ -25,7 +25,7 @@ const AboutMe = () => {
     { skill: "github", img: github },
     { skill: "figma", img: figma },
     { skill: "blender", img: blender },
-    // { skill: "unity", img: unity },
+    { skill: "unity", img: unity },
     { skill: "photoshop", img: photoshop },
     { skill: "illust", img: illust },
     { skill: "typescript", img: ts },
